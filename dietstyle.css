@@ -1,0 +1,39 @@
+ a{
+    font-size: 25px;
+    margin-right: auto;
+    text-align: left;
+    text-decoration: none;
+
+  }
+  body{
+    margin: 20px;
+    line-height: 1.6;
+
+  }
+  h1{
+    text-align: center;
+    border-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  header p{
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+  table th{
+    font-weight: bold;
+  }
+  details{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding:10px;
+    margin: 15px 0;
+    
+  }
+  
