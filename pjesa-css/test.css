@@ -99,3 +99,11 @@ body {
   margin:6px;
   font-size: 14px;
 }
+html{
+  scroll-behavior: smooth;
+}
+.shop-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color:black;
+}
