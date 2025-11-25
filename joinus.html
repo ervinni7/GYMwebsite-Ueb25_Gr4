@@ -20,34 +20,49 @@
         }
      
 
-        a{
-             width: 100%;
-             text-align: center;
-             padding: 12px;
-             background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-             font-size: 16px;
-             border-radius: 6px;
-
-        }
-        a:hover{
-            background-color: #1d4ed8;
-        }
 
         #signup{
             margin: 10px;
-            background-color: bisque;
-            color: burlywood;
+            background-color:#a0cbd9;
+            color: black;
+            cursor: pointer;
+            
         }
+        #signup:hover{
+             background-color: #19708d;
+        }
+   
+        
         .form {
             text-align: center;
             background: #ffffff;
              width: 350px;
-             padding: 25px;
-             margin: 30px auto;
+             padding: 40px;
+             margin: 5% auto;
              border-radius: 10px;
              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+        .kontakti{
+            position: fixed;
+            padding: 20px;
+            margin-top: 10%;
+            bottom: 20px;
+            left: 20px;
+            background-color: white;
+            border-radius: 10px;
+             box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+        }
+
+        #orari {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    font-family: Arial;
 }
 
     </style>
@@ -55,15 +70,22 @@
 <body >
  <header>
 
-    <h1 style="text-align: center; color:green;"> JOIN US!</h1> 
-    <p class="subtitle">Filloni rrugetimin tuaj me ne! </p>
+    <h1 style="text-align: center; color: rgb(255, 165, 0);"> JOIN US!</h1> 
+    <p class="subtitle" style="font: bolder; ">Filloni rrugetimin tuaj me ne! </p>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center"><a href="skeleti.html">Kreu</a></td>
+          <td align="center"><a href="diet.html">Dietat</a></td>
+          <td align="center"><a href="pakot.html">Pakot</a></td>
+          <td align="center"><a href="joinus.html">Kontakti</a></td>
+        </tr>
+      </table>
 </header>
  <main style="text-align: center;">
-    <a href="skeleti.html">Home Page</a>
     <div class="form">
-    <form action="" style="text-align: center; " >
+    <form action=""  >
                 <label for="email">Email:</label> <br>
-        <input type="email" name="email" id="email" placeholder="Sheno emailin: "  ><br>
+        <input type="email" name="email" id="email" placeholder="Sheno emailin: " size="40" ><br>
                 
 
         <input type="submit" value="Sign Up!" id="signup" name="signup">
@@ -75,6 +97,13 @@
     </main>
 
     <footer>
+        <div id="orari">
+    <h4>🏋️ Working Hours</h4>
+    <p>Mon–Sat: 07:00 – 22:00</p>
+    <p>Sun: 10:00 – 18:00</p>
+</div>
+
+
   <div class="kontakti">
         <h3>Contact Us</h3>
 
