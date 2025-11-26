@@ -3,67 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us!</title>
-    <style>
-        body{
-            background-color: #f5f7fa;
-        }
+    <title>E's GYM - Kontakti </title>
+        <link rel="stylesheet" href="/pjesa-css/joinus.css" />
 
-        .subtitle{
-            text-align: center;
-            font-weight: bolder;
-        }
-
-        label{
-            display: block;
-            font-weight: bold;
-        }
-     
-
-        a{
-             width: 100%;
-             text-align: center;
-             padding: 12px;
-             background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-             font-size: 16px;
-             border-radius: 6px;
-
-        }
-        a:hover{
-            background-color: #1d4ed8;
-        }
-
-        #signup{
-            margin: 10px;
-            background-color: bisque;
-            color: burlywood;
-        }
-        .form {
-            text-align: center;
-            background: #ffffff;
-             width: 350px;
-             padding: 25px;
-             margin: 30px auto;
-             border-radius: 10px;
-             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-    </style>
 </head>
 <body >
- <header>
+   <header>
+      <div class="brand">
+        <h1>E's GYM</h1>
+      </div>
 
-    <h1 style="text-align: center; color:green;"> JOIN US!</h1> 
-    <p class="subtitle">Filloni rrugetimin tuaj me ne! </p>
-</header>
+      <div class="nav-wrap">
+        <table
+          class="nav-table"
+          width="100%"
+        >
+          <tr>
+            <td align="center"><a href="/pjesa-html/kreu.html" target="content-frame" class="nav-link">Kreu</a></td>
+            <td align="center"><a href="/pjesa-html/diet.html" target="content-frame" class="nav-link">Dietat</a></td>
+            <td align="center"><a href="/pjesa-html/pakot.html" target="content-frame" class="nav-link">Pakot</a></td>
+            <td align="center"><a href="/pjesa-html/joinus.html" target="content-frame" class="nav-link">Kontakti</a></td>
+          </tr>
+        </table>
+      </div>
+    </header>
  <main style="text-align: center;">
-    <a href="/pjesa-html/skeleti.html">Home Page</a>
     <div class="form">
-    <form action="" style="text-align: center; " >
-                <label for="email">Email:</label> <br>
-        <input type="email" name="email" id="email" placeholder="Sheno emailin: "  ><br>
+    <form action=""  >
+               <h2><label for="email">Bashkohuni me ne!</label></h2>  <br>
+               <p>Plotësojeni emailin për t’u regjistruar dhe për të marrë ofertat tona më të fundit.</p> <br>
+        <input type="email" name="email" id="email" placeholder="Sheno emailin: " size="40" ><br>
                 
 
         <input type="submit" value="Sign Up!" id="signup" name="signup">
@@ -72,20 +41,10 @@
 </div>
 
     
-    </main>
+    </main> <hr>
 
     <footer>
-  <div class="kontakti">
-        <h3>Contact Us</h3>
-
-        <p><strong>📞 Phone:</strong> +383 44 123 456</p>
-        <p><strong>📧 Email:</strong> info@gymfit.com</p>
-        <p><strong>📍 Address:</strong> Rr. Deshmoret e Kombit, Prishtinë</p>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 GymFit. All rights reserved.</p>
-    </div>
+      <p id="copyright">© 2025 E's GYM. All rights reserved.</p>
     </footer>
 </body>
 </html>
