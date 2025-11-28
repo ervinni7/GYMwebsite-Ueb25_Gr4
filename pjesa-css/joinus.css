@@ -21,6 +21,7 @@ body {
     border-radius: 10px;
     float: right;
     margin-right: 20px;
+      flex: 2;
 }
 
 /* */
@@ -49,29 +50,49 @@ body {
     font-weight: bold;
 }
 
+/* Lista e rreth nesh*/
 .footer-col ul {
     list-style: none;
     padding: 0;
 }
 
+/*Elementet e rreth nesh,hapesira*/
 .footer-col ul li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
+/*Elementet e rreth nesh, linqet */
 .footer-col ul li a {
     text-decoration: none;
     color: #333;
 }
 
+
+/* Ndryshon ngjyren me kursor tek Rreth Nesh*/
 .footer-col ul li a:hover {
     color: orange;
 }
 
-.map-col {
-    flex: 2;
+.logo-col img {
+    width: 150px;
+    margin-bottom: 10px;
 }
 
+.logo-col .orar {
+    margin-top: 10px;
+}
 
+.logo-col .orar h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #000;
+}
+
+.logo-col .orar p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 15px;
+}
 
 
 
@@ -97,10 +118,11 @@ body {
 }
 
             
-      
+/* Butoni signup me kursor*/      
 #signup:hover {
 background-color: #e69500;
 }
+
    
  /* Pjesa e katrorit  */       
 .form { 
@@ -111,3 +133,4 @@ background-color: #e69500;
 border-radius: 12px;
 box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
+
