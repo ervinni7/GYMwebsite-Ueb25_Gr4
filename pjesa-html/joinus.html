@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E's GYM - Kontakti </title>
         <link rel="stylesheet" href="/pjesa-css/joinus.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body >
@@ -29,10 +30,10 @@
 
     <footer id="footeri">
           <div class="footer-col logo-col">
-        <a href="kreu.html"><img src="/fotot/logo.png" alt="Logo"> </a>
+        <a href="kreu.html"><img src="/fotot/logo.png" alt="Logo" data-aos="fade-up"> </a>
     </div>
 
-       <div class="orar">
+       <div class="orar" data-aos="fade-up">
         <h3>ORARI:</h3>
         <p> <span class="dita">Hënë - E Premte:</span> <br> <span class="ora"> 06:00 - 22:00 </span></p>
         <p><span class="dita">E Shtunë:</span> <br> <span class="ora"> 08:00 - 20:00 </span> </p>
@@ -40,7 +41,7 @@
 
     </div>
 
-    <div class="footer-col">
+    <div class="footer-col" data-aos="fade-up">
         <h3>NAVIGIMI:</h3>
         <ul>
             <li><a href="kreu.html">Kreu</a></li>
@@ -50,7 +51,7 @@
         </ul>
     </div>
 
-    <div class="footer-col">
+    <div class="footer-col" data-aos="fade-up">
         <h3>NA KONTAKTONI:</h3>
         <ul>
             <li><a href="https://maps.app.goo.gl/YuvtAF32VmugpQxi7" target="_blank">📍Rruga B</a></li>
@@ -67,11 +68,15 @@
         style="border:0;"
          allowfullscreen=""
           loading="lazy"
-           referrerpolicy="no-referrer-when-downgrade"></iframe>
+           referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up"></iframe>
       </div>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init(); // Kjo e ndez librarinë
+</script>
 <script src="/pjesa-js/joinus.js"></script>
 </body>
 </html>
