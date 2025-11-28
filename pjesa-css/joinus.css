@@ -68,15 +68,6 @@ body {
      content: "›";        
 
 }
-  .footer-col ul li a::before{
-    content: "›";         
-    color: #FFC107;       
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 8px;     
-    transition: 0.3s;
-  }
-
 
 /* Ndryshon ngjyren me kursor tek Rreth Nesh*/
 .footer-col ul li a:hover {
