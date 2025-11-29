@@ -6,9 +6,25 @@
     text-align: center;
     border-bottom: 20px;
     margin-bottom: 20px;
-    margin-top: auto;
     
   }
+  .intro-section {
+  margin: 20px 40px;
+}
+
+.intro-layout {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  gap: 40px;          
+}
+
+.intro-text {
+  flex: 1;
+  font-size: 20px;    
+  margin-top: 30px;        
+}
+
 summary{
   cursor: pointer;
 }
@@ -16,8 +32,12 @@ summary{
   table{
     width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 20px;
     border: 3px solid black;
+
+  }
+  td{
+    border: 5%;
   }
   
   fieldset {
@@ -49,46 +69,10 @@ html, body {
   color: #333;
 }
 
-header {
-  background: #fff;
-  padding: 15px 30px;
-  border-bottom: 2px solid #ff8800;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.brand {
-  margin: 0;
-}
-.brand h1 {
-  color: #ff8800;
-  font-size: 26px;
-  margin: 0;
-}
-
-.nav-wrap {
-  margin: 0;
-}
-.nav-table {
-  border-collapse: collapse;
-}
-.nav-table td {
-  padding: 10px 20px;
-}
-.nav-table a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 16px;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-  transition: border 0.2s, color 0.2s;
-}
-.nav-table a:hover {
-  color: #ff8800;
+.footer-logo {
+    width: 150px;
+    max-width: 100%;
+    display: block;
 }
 
 
@@ -100,6 +84,9 @@ header {
 
 
 @media (max-width: 760px) {
+  .intro-layout {
+    flex-direction:column
+  }
   header {
     flex-direction: column;
     padding: 10px;
@@ -114,10 +101,56 @@ header {
 section li{
   margin-left: 20px;
 }
-.footer-bottom {
+.footer-bottom{
   text-align: center;
   font-size: 13px;
   border-top: 1px solid #333;
   padding-top: 12px;
   color: #aaa;
+}
+.footerkontakt{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tools-section p{
+  text-align: center;
+
+}
+.tools-section {
+  float: left;         
+  width: 360px;        
+  margin: 60px;   
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+
+}
+
+.tools-section input,
+.tools-section button {
+  width: 100%;
+  padding: 8px;
+  margin: 7px 0;
+}
+
+.tools-section button {
+  background: #ff8800;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.tools-section button:hover {
+  opacity: .85;
+}
+
+#bmi-result {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
