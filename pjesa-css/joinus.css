@@ -21,26 +21,20 @@ body {
     border-radius: 10px;
     float: right;
     margin-right: 20px;
-      flex: 2;
+    flex: 2;
 }
 
-/* */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px;
-    background-color: #f5f5f5;
-    gap: 40px;
-}
 
 /* Secila kolone e footerit */
 .footer-col {
-    flex: 1;
+    flex: 1;    
+   text-align: center; 
 }
 
 .logo-col img {
-    width: 200px; 
+    width: 250px;
+    margin-bottom: 20px; 
+    margin-top: -10px;
 }
 
 /* Titujt e kolonav*/
@@ -50,13 +44,16 @@ body {
     font-weight: bold;
 }
 
-/* Lista e rreth nesh*/
+/* Lista e navigimit*/
 .footer-col ul {
     list-style: none;
     padding: 0;
 }
+.footer-col li{
+  font-size: large;
+}
 
-/*Elementet e rreth nesh,hapesira*/
+/*Elementet e navigimit,hapesira*/
 .footer-col ul li {
     margin-bottom: 15px;
 }
@@ -65,8 +62,6 @@ body {
 .footer-col ul li a {
     text-decoration: none;
     color: #333;
-     content: "›";        
-
 }
 
 /* Ndryshon ngjyren me kursor tek Rreth Nesh*/
@@ -75,8 +70,8 @@ body {
 }
 
 .logo-col img {
-    width: 150px;
-    margin-bottom: 10px;
+    width: 250px;
+    margin-bottom: 20px;
 }
 
 .logo-col .orar {
@@ -94,17 +89,18 @@ body {
     color: #555;
     font-size: 15px;
 }
-/* Te dy kodet jane per permiresim te orarit */
-.orari p {
-    display: flex;
-    gap: 10px; 
-    font-size: 16px;
-    margin: 20px 0;
-}
-
+/* per permiresim te orarit */
 .dita {
+  font-size: large;
     font-weight: 600;
     min-width: 170px;  
+}
+
+.orar{
+  margin-top: 15x;
+}
+.orar p{
+  font-size: 16px;
 }
 
 
