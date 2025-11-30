@@ -54,7 +54,7 @@ body {
   margin: 8px auto;
   border: none;
   border-radius: 10px; 
-  background: #000;
+  background: black;
   color: white;
   font-size: 15px;
   cursor: pointer;
@@ -88,16 +88,23 @@ body {
   margin: 6px 0;
   font-size: 15px;
 }
+.footer-col ul li a:hover{
+  color: orange;
+}
 
 .footer-logo {
-  width: 150px;
+  width: 170px;
   max-width: 100%;
   display: block;
+  transform: translateY(-38px);
+}
+hr{
+  margin-top: 35px;
 }
 
 .footer-hours {
-  margin:6px;
   font-size: 14px;
+   transform: translateY(-68px);
 }
 html{
   scroll-behavior: smooth;
