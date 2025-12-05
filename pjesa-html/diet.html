@@ -1,6 +1,8 @@
-<!DOCTYPE html css>
-<html css>
+<!DOCTYPE html>
+<html lang="sq">
 <head>
+  <title>E's GYM</title>
+
     <meta charset = "UTF-8" />
     <link rel = "stylesheet" href = "/pjesa-css/dietstyle.css">
      
@@ -8,24 +10,46 @@
 </head>
 <body  bgcolor="aliceblue" text="#000">
 
-  <header>
-    <h1>Dieta për Gym</h1>
-    <tr>
-                    <td align="center"><a href="/pjesa-html/kreu.html">Kreu</a></td>
-                    <td align="center"><a href="/pjesa-html/diet.html">Dietat</a></td>
-                    <td align="center"><a href="/pjesa-html/pakot.html">Pakot</a></td>
-                    <td align="center"><a href="/pjesa-html/joinus.html">Kontakti</a></td>
-                </tr>
-    <hr>
-    <p>Të hash një dietë të shëndetshme dhe të ekuilibruar është një pjesë e rëndësishme e ruajtjes së shëndetit të mirë dhe mund t'ju ndihmojë të ndiheni më mirë.
-Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhura dhe të konsumoni sasinë e duhur të ushqimit dhe pijeve për të arritur dhe mbajtur një peshë të shëndetshme trupore. </p>
-  </header>
 
-  
-  <section aria-label="Përmbledhje e dietave">
-    <h2>Përmbledhje</h2>
-    <table border="1" cellpadding="6" cellspacing="0">
-      <caption>Dieta të shpejta</caption>
+  <section aria-label="Përmbledhje e dietave" class ="intro-section">
+    <h1>Përmbledhje Dietash</h1>
+    <div class ="intro-layout">
+      <div class = "intro-text">
+    <p>Të hash një dietë të shëndetshme dhe të ekuilibruar është një pjesë e rëndësishme e ruajtjes së shëndetit të mirë dhe mund t'ju ndihmojë të ndiheni më mirë.
+Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhura dhe të konsumoni sasinë e duhur të ushqimit dhe pijeve për të arritur dhe mbajtur një peshë të shëndetshme trupore.
+        Adoptimi i një mënyre të shëndetshme të të ushqyerit është një investim afatgjatë në mirëqenie dhe energji ditore. Dieta nuk ka për qëllim privimin, por balancimin e sasisë së ushqimit sipas nevojave të trupit. Çdo trup është unik — disa kërkojnë më shumë kalori për rritje muskulare, të tjerë fokusohen në humbje peshe ose thjesht në mbajtjen e një forme të qëndrueshme. Duke kuptuar gjendjen fizike fillestare dhe qëllimin që synoni, ju mund të përcaktoni më lehtë stilin ushqimor dhe planin e dietës që i përshtatet më së miri ritmit tuaj të jetës.
+        Në bazë të qëllimit tuaj - humbje peshe, shtim mase apo mirëmbajtje - ju mund të zgjidhni një nga dietat tona të strukturuara.
+        Përdor kalkulatorin BMI në të majtë për të pasur një ide më të qartë rreth gjendjes tënde trupore.
+      </p>
+    </div>
+
+<section class="tools-section" aria-label="Vegla fitnesi">
+    <h2>Kalkulatori BMI</h2>
+    <p>
+      Përdor këtë kalkulator të thjeshtë për të llogaritur indeksin e masës trupore (BMI).
+      Kjo nuk zëvendëson këshillën e mjekut, por të jep një ide të përgjithshme për trupin tënd.
+    </p>
+
+    <form id="bmi-form" class="bmi-form">
+      <div class="form-row">
+        <label for="height">Gjatësia (cm):</label>
+        <input type="number" id="height" min="80" max="230" placeholder="p.sh. 175">
+      </div>
+      <div class="form-row">
+        <label for="weight">Pesha (kg):</label>
+        <input type="number" id="weight" min="30" max="250" placeholder="p.sh. 72">
+      </div>
+      <button type="submit">Llogarit BMI</button>
+    </form>
+
+    <p id="bmi-result" class="bmi-message"></p>
+  </section>
+  </div>
+  </section>
+
+  <hr>
+<table border="1" cellpadding="6" cellspacing="0">
+      <caption><strong> Dieta të shpejta</strong></caption>
       <thead>
         <tr>
           <th>Dieta</th>
@@ -73,10 +97,8 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
         </tr>
       </tbody>
     </table>
-  </section>
 
   <hr>
-
   
   <section>
     <h2>Detajet e dietave</h2>
@@ -156,7 +178,7 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
         <fieldset>
           <legend>Parametra</legend>
           <ul>
-            <li>Kalori: rreth nevojës ditore (TDEE)</li>
+            <li>Kalori: rreth nevojës ditore</li>
             <li>Proteinë: 1.6–2.0 g/kg</li>
             <li>Balancë karbo/yndyrë sipas preferencës</li>
           </ul>
@@ -210,26 +232,23 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
       <li>Peshk + sallatë jeshile</li>
     </ol>
   </details>
-</article>
-
-
-</article>
-
-   
-
-  </section>
-
+</section>
+ 
   <hr>
 
+
   <footer>
-    <p>Shënim: Ky është shembull informues. Për plan personal, konsulta me nutricionist.</p>
+<div class = "footerkontakt">
+<h5>Na Kontaktoni</h5>
+</div>
+<div class="footer-bottom">
+<p>Tel: +383 44 000 000</p>
+        <p>Email: <a href="mailto:info@esgym.com">info@esgym.com</a></p>
+        <p>Instagram: @es_gym</p>
+        <p>© 2025 E's GYM. All rights reserved.</p>
+    </div>
   </footer>
-</body>
-</html>
-
-
-
-
+  <script src="/pjesa-js/diet.js"></script>
 </body>
 </html>
 

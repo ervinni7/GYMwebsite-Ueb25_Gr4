@@ -1,8 +1,10 @@
+/* Reset i margjinave dhe padding-ut për të gjithë elementët */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0;   
   padding: 0;
 }
+/* Stilizimi bazik për faqen dhe fontin */
 html,
 body {
   height: 100%;
@@ -11,6 +13,7 @@ body {
   color: #222;
 }
 
+/* Kontejneri kryesor që mban përmbajtjen */
 .container {
   max-width: 900px;
   margin: 20px auto;
@@ -20,6 +23,7 @@ body {
   border: 1px solid #ddd;
 }
 
+/* Seksioni Hero me titull dhe slogan*/
 .hero {
   text-align: center;
   margin-bottom: 30px;
@@ -38,6 +42,7 @@ body {
   letter-spacing: 1px;
 }
 
+/* Rresht me imazh dhe tekst*/
 .row {
   display: flex;
   gap: 25px;
@@ -55,9 +60,10 @@ body {
   object-fit: cover;
   border: 2px solid #ddd;
 }
+/* Teksti brenda rreshtit*/
 .card-text {
   max-width: 550px;
-  flex: 1;
+  flex: 1; /* Zgjerimi sipas nevojës */
 }
 .card-text h3 {
   color: #333;
@@ -90,7 +96,7 @@ body {
   color: #555;
   font-weight: bold;
 }
-
+/* Stili i butonit*/
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -108,12 +114,13 @@ body {
   color: #ff8800;
 }
 
+/*  Media query për ekrane të vogla*/
 @media (max-width: 760px) {
   .row {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column;/* Vendos vertikalisht imazhin dhe tekstin */
+    text-align: center;/* Qendrim i tekstit në mes */
   }
   .card-text {
-    max-width: 100%;
+    max-width: 100%; /* Teksti zgjerohet në të gjithë hapësirën */
   }
 }
