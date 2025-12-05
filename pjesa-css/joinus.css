@@ -7,15 +7,22 @@ body {
 }
 
 /* Pjesa e Footerit */
-#footeri{
+/* #footeri{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
     background-color: #f5f5f5;
     gap: 40px
-}
+} */
 
+.footeri {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
   /* Pjesa e Mapit */
 #mapi{
     border-radius: 10px;
@@ -29,7 +36,8 @@ body {
 .footer-col {
     flex: 1;    
    text-align: center; 
-}
+} 
+
 
 .logo-col img {
     width: 250px;
@@ -68,12 +76,13 @@ body {
 .footer-col ul li a:hover {
     color: orange;
 }
-
+/*ndryshimi i imazhit */
 .logo-col img {
     width: 250px;
     margin-bottom: 20px;
 }
 
+/*Logoja dhe orari */
 .logo-col .orar {
     margin-top: 10px;
 }
@@ -95,16 +104,13 @@ body {
     font-weight: 600;
     min-width: 170px;  
 }
-
+  /* Permiresimi i orarit me margina */
 .orar{
   margin-top: 15x;
 }
 .orar p{
   font-size: 16px;
 }
-
-
-
 
 /* Pjesa e Label */
 #email {
@@ -113,6 +119,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+/*Kur Useri eshte duke shenuar emailin */
+#email:focus, #signup:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.6);
+}
+
      
 /* Pjesa e butonit */
 #signup {
@@ -144,3 +156,15 @@ border-radius: 12px;
 box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column; 
+    }
+    .footer-col {
+        width: 100%; 
+        text-align: center;
+    }
+    #signup {
+        width: 100%;
+    }
+}
