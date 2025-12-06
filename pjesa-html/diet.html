@@ -48,74 +48,73 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
   </section>
 
   <hr>
-<table border="1" cellpadding="6" cellspacing="0">
-      <caption><strong> Dieta të shpejta</strong></caption>
-      <thead>
-        <tr>
-          <th>Dieta</th>
-          <th>Qëllimi</th>
-          <th>Kohëzgjatja</th>
-          <th>Shënim</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><p> Bulking</p></td>
-          <td>Shtim masë muskulore</td>
-          <td>8-12 javë</td>
-          <td>Kalori e tejkaluar dhe e shëndetshme</td>
-        </tr>
-        <tr>
-          <td><p> Cutting</p></td>
-          <td>Reduktim dhjam</td>
-          <td>6-12 javë</td>
-          <td>Deficit kalorik i kontrolluar</td>
-        </tr>
-        <tr>
-          <td><p> Mirembajtje</p></td>
-          <td>Ruajtje peshe</td>
-          <td>Vazhdueshëm</td>
-          <td>Balancë kalori/macros</td>
-        </tr>
-        <tr>
-          <td><p> Vegjetarian</p></td>
-          <td>Reduktim Mase trupore</td>
-          <td>Vazhdueshëm</td>
-          <td>Balance kalori/ushqim vegjetarian</td>
-        </tr>
-        <tr>
-          <td><p>Proteine e lartë</p></td>
-          <td>Rritje muskujsh dhe rikuperimi</td>
-          <td>5-10 javë</td>
-          <td>Proteinë të madhe/rikuperimi muskujsh</td>
-        </tr>
-        <tr>
-          <td><p>Low-Carb - Humbje peshe stabile</p></td>
-          <td>Reduktim peshe e shëndetshme</td>
-          <td> 6-10 javë</td>
-          <td>Karbohidrate në numër të vogël</td>
-        </tr>
-      </tbody>
-    </table>
+<hr>
 
-  <hr>
-  
-  <section>
+<table class="diet-table">
+  <caption>Dieta të shpejta</caption>
+  <thead>
+    <tr>
+      <th>Dieta</th>
+      <th>Qëllimi</th>
+      <th>Kohëzgjatja</th>
+      <th>Shënim</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-target = "Bulking">
+      <td>Bulking</td>
+      <td>Shtim masë muskulore</td>
+      <td>8-12 javë</td>
+      <td>Kalori e tejkaluar dhe e shëndetshme</td>
+    </tr>
+    <tr data-target = "Cutting">
+      <td>Cutting</td>
+      <td>Reduktim dhjam</td>
+      <td>6-12 javë</td>
+      <td>Deficit kalorik i kontrolluar</td>
+    </tr>
+    <tr data-target = "Mirembajtje">
+      <td>Mirëmbajtje</td>
+      <td>Ruajtje peshe</td>
+      <td>Vazhdueshëm</td>
+      <td>Balancë kalori/macros</td>
+    </tr>
+    <tr data-target = "Vegjetarian">
+      <td>Vegjetarian</td>
+      <td>Reduktim mase trupore</td>
+      <td>Vazhdueshëm</td>
+      <td>Balancë kalori/ushqim vegjetarian</td>
+    </tr>
+    <tr data-target = "HighProtein">
+      <td>Proteine e lartë</td>
+      <td>Rritje muskujsh dhe rikuperimi</td>
+      <td>5-10 javë</td>
+      <td>Proteinë e lartë/rikuperim muskujsh</td>
+    </tr>
+    <tr data-target = "Lowcarb"> 
+      <td>Low-Carb</td>
+      <td>Reduktim peshe e shëndetshme</td>
+      <td>6-10 javë</td>
+      <td>Karbohidrate në sasi të ulët</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
     <h2>Detajet e dietave</h2>
-
   
-  
-      <details>
+      <details id = "dieta-bulking">
         <summary><strong>Bulking — Shtim muskujsh</strong></summary>
         <p><em>Qëllimi:</em> Shtim masë muskulore me një surplus të lehtë kalorik.</p>
 
         <fieldset>
           <legend>Parametra të përgjithshëm</legend>
           <ul>
-            <li>Kalori: +300–500 kcal mbi nevojën ditore.</li>
-            <li>Proteinë: 1.6–2.2 g/kg trup.</li>
+            <li>Kalori: +300-500 kcal mbi nevojën ditore.</li>
+            <li>Proteinë: 1.6-2.2 g/kg trup.</li>
             <li>Karbohidrate: të larta për energji.</li>
-            <li>Yndyrna: 20–30% e kalorigjisë.</li>
+            <li>Yndyrna: 20-30% e kalorigjisë.</li>
           </ul>
         </fieldset>
 
@@ -129,17 +128,24 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
         </ol>
 
         <h5>Intakes</h5>
-        <table border="1" cellpadding="4">
-          <tr><th>Proteinë</th><th>Karbo</th><th>Yndyrë</th></tr>
-          <tr><td>180 g</td><td>400 g</td><td>90 g</td></tr>
-        </table>
-      </details>
-      
-   
-
- 
+<table class="mtabela">
+  <thead>
+    <tr>
+      <th>Proteinë</th>
+      <th>Karbo</th>
+      <th>Yndyrë</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>180 g</td>
+      <td>400 g</td>
+      <td>90 g</td>
+    </tr>
+  </tbody>
+</table>
   
-      <details>
+      <details id = "dieta-cutting">
         <summary><strong>Cutting — Humbje dhjamë</strong></summary>
         <p><em>Qëllimi:</em> Reduktim i përqindjes së dhjamit duke ruajtur sa më shumë muskul.</p>
 
@@ -171,7 +177,7 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
   
 
     
-      <details>
+      <details id = "dieta-mirembajtje">
         <summary><strong>Mirembajtje — Ruajtje peshe</strong></summary>
         <p><em>Qëllimi:</em> Të qëndrosh në peshën e dëshiruar dhe të ruash performancën.</p>
 
@@ -179,7 +185,7 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
           <legend>Parametra</legend>
           <ul>
             <li>Kalori: rreth nevojës ditore</li>
-            <li>Proteinë: 1.6–2.0 g/kg</li>
+            <li>Proteinë: 1.6-2.0 g/kg</li>
             <li>Balancë karbo/yndyrë sipas preferencës</li>
           </ul>
         </fieldset>
@@ -188,7 +194,32 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
         <p>Ndërro llojet e ushqimit për të ruajtur variacionin: dy vakte me peshk, dy me pulë, një me mish i kuq të ligët, perime çdo ditë dhe karbohidrate të kompletuara.</p>
       </details>
 
-  <details>
+      <details id="dieta-vegjetariane">
+  <summary><strong>Vegjetarian — Dietë me Ushqim Bimor</strong></summary>
+  <p><em>Qëllimi:</em> Reduktim mase trupore dhe stil ushqimi më i shëndetshëm.</p>
+
+  <fieldset>
+    <legend>Parametra</legend>
+    <ul>
+      <li>Kalori: sipas qëllimit (deficit ose mirëmbajtje)</li>
+      <li>Proteina: rreth 1.6-2.2 g/kg nga burime bimore</li>
+      <li>Karbohidrate: të larta-mesatare</li>
+      <li>Yndyrna: të shëndetshme nga fara dhe vajra bimore</li>
+    </ul>
+  </fieldset>
+
+  <h4>Plani ushqimor</h4>
+  <ol>
+    <li>Omeletë vegjetariane ose tofu scramble + sallatë</li>
+    <li>Smoothie me fruta + fara chia</li>
+    <li>Pasta integrale me perime</li>
+    <li>Thjerrëza ose qiqra + oriz integral</li>
+    <li>Sallatë me avokado dhe arra</li>
+  </ol>
+</details>
+
+
+  <details id ="dieta-highProtein">
     <summary><strong>High-Protein — Rritje Proteine</strong></summary>
     <p><em>Qëllimi:</em> Maksimizim rikuperimi, ruajtje muskulore dhe ndihmë në humbjen e dhjamit.</p>
 
@@ -211,7 +242,7 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
     </ol>
   </details>
 
-  <details>
+  <details id = "dietalowcarb">
     <summary><strong>Low-Carb — Humbje Peshe e Qëndrueshme</strong></strong></summary>
     <p><em>Qëllimi:</em> Humbje dhjami pa kufizime ekstreme.</p>
 

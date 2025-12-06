@@ -29,17 +29,89 @@ summary{
   cursor: pointer;
 }
 
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px;
-    border: 3px solid black;
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
 
-  }
-  td{
-    border: 5%;
-  }
-  
+td, th {
+  padding: 0.6rem 0.8rem;
+}
+
+
+.diet-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.diet-table caption {
+  caption-side: top;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.diet-table thead {
+  background: #ff8800;
+  color: #ffffff;
+}
+
+.diet-table th,
+.diet-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+.diet-table tbody tr:nth-child(even) {
+  background-color: #f3f4ff;
+}
+
+.diet-table tbody tr:nth-child(odd) {
+  background-color: #f9fafb;
+}
+
+.diet-table tbody tr:hover {
+  background-color: #e0ebff;
+  transform: translateY(-1px);
+  transition: 0.15s ease;
+}
+
+
+.mtabela{
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+  min-width: 260px;
+  font-size: 0.9rem;
+}
+
+.mtabela th,
+.mtabela-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+}
+
+.mtabela thead {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.mtabela tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+
+
   fieldset {
   border: 2px solid black;
 }
