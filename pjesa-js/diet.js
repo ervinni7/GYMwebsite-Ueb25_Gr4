@@ -23,3 +23,36 @@ document.getElementById("bmi-form").addEventListener("submit", function(e){
     result.style.color = "#111";
 });
 
+const rowToDetailsMap = {
+  Bulking: 'dieta-bulking',
+  Cutting: 'dieta-cutting',
+  Mirembajtje: 'dieta-mirembajtje',
+  Vegjetarian: 'dieta-vegjetariane',
+  HighProtein: 'dieta-highProtein',
+  Lowcarb: 'dietalowcarb'
+};
+
+const dietRows = document.querySelectorAll('.diet-table tbody tr');
+
+dietRows.forEach(row => {
+  row.style.cursor = 'pointer';
+
+  row.addEventListener('click', () => {
+    const key = row.dataset.target;
+    const detailsId = rowToDetailsMap[key];
+    if (!detailsId) return;
+
+    document.querySelectorAll('section details').forEach(d => {
+      d.open = false;
+    });
+
+    const targetDetails = document.getElementById(detailsId);
+    if (targetDetails) {
+      targetDetails.setAttribute("open", true);
+targetDetails.querySelector("summary").focus();
+targetDetails.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    }
+  });
+});
+
