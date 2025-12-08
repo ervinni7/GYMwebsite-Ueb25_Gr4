@@ -38,6 +38,9 @@ dietRows.forEach(row => {
   row.style.cursor = 'pointer';
 
   row.addEventListener('click', () => {
+    
+    const detailsSection = document.getElementById('diet-details');
+if (detailsSection) detailsSection.style.display = 'block';
     const key = row.dataset.target;
     const detailsId = rowToDetailsMap[key];
     if (!detailsId) return;
