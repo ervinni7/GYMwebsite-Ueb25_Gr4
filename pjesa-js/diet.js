@@ -35,7 +35,7 @@ const rowToDetailsMap = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const dietRows = document.querySelectorAll('.diet-table tbody tr');
+  const dietRows = document.querySelectorAll('.diet-item');
 
   dietRows.forEach(row => {
     row.style.cursor = 'pointer';
