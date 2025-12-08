@@ -10,6 +10,7 @@
   }
   .intro-section {
   margin: 20px 40px;
+  margin-bottom: 40px;
 }
 
 .intro-layout {
@@ -24,22 +25,96 @@
   font-size: 20px;    
   margin-top: 30px;        
 }
-
-summary{
-  cursor: pointer;
+.intro-text p{
+  line-height: 1.7;
+  font-size: 18px;
+  text-align: justify;
+  color: #444
+}
+.divider{
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff8800, transparent);
+  margin: 40px 0;
 }
 
-  table{
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px;
-    border: 3px solid black;
+#diet-list {
+  max-width: 900px;
+  margin: 20px auto;
+}
 
-  }
-  td{
-    border: 5%;
-  }
-  
+#diet-list h2 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.diet-item {
+  background: white;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid transparent;
+}
+
+.diet-item h3 {
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+.diet-item:hover {
+  background: #ffe4c4;
+  transform: translateY(-2px);
+}
+
+.diet-item.active {
+  border-left: 4px solid #ff8800;
+  background: #fff5e6;
+}
+
+
+#diet-details {
+  display: none;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.diet-card {
+  display: none;         
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(6, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.diet-card h3 {
+  margin-bottom: 10px;
+}
+
+.diet-card.active {
+  display: block;
+}
+
+.diet-detail {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.diet-detail th,
+.diet-detail td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.diet-detail th {
+  width: 40%;
+  font-weight: 600;
+}
+
   fieldset {
   border: 2px solid black;
 }
@@ -50,12 +125,7 @@ summary{
   table th{
     font-weight: bold;
   }
-  details{
-    border: 1px solid black;
-    border-radius: 8px;
-    padding:10px;
-    margin: 15px 0;
-  }
+ 
  
 * {
   box-sizing: border-box;
@@ -115,6 +185,9 @@ section li{
 
 .tools-section p{
   text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
 
 }
 .tools-section {
@@ -122,27 +195,51 @@ section li{
   width: 360px;        
   margin: 60px;   
   background: white;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 12px;
   max-width: 400px;
   margin: 20px auto;
-  border: 1px solid #ccc;
-
+  border: 1px solid #e3e3e3;
+  transition: 0.3s ease-in-out;
 }
 
-.tools-section input,
-.tools-section button {
+.tools-section h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.tools-section input:focus {
+    outline: none;
+    border-color: #ff8800;
+    box-shadow: 0 0 4px rgba(255,136,0,0.6);
+}
+
+.tools-section input{
   width: 100%;
-  padding: 8px;
-  margin: 7px 0;
+  padding: 10px;
+  border-radius: 6px;
+   border: 1px solid #ccc;
 }
 
 .tools-section button {
   background: #ff8800;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px; 
   color: white;
   font-weight: bold;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.tools-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
 .tools-section button:hover {
@@ -150,7 +247,8 @@ section li{
 }
 
 #bmi-result {
-  margin-top: 10px;
-  font-size: 17px;
-  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
 }

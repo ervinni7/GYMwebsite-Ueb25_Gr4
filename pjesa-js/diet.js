@@ -23,3 +23,42 @@ document.getElementById("bmi-form").addEventListener("submit", function(e){
     result.style.color = "#111";
 });
 
+
+
+const rowToDetailsMap = {
+  bulking: 'diet-bulking',
+  cutting: 'diet-cutting',
+  mirembajtje: 'diet-maintenance',
+  vegjetarian: 'diet-veg',
+  highprotein: 'diet-highprotein',
+  lowcarb: 'diet-lowcarb'
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dietRows = document.querySelectorAll('.diet-item');
+
+  dietRows.forEach(row => {
+    row.style.cursor = 'pointer';
+
+    row.addEventListener('click', () => {
+      const detailsSection = document.getElementById('diet-details');
+      if (detailsSection) detailsSection.style.display = 'block';
+
+      const key = row.dataset.target;          
+      const detailsId = rowToDetailsMap[key]; 
+      if (!detailsId) return;
+
+      document.querySelectorAll('.diet-card').forEach(card => {
+        card.classList.remove('active');
+      });
+
+      const card = document.getElementById(detailsId);
+      if (card) {
+        card.classList.add('active');
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+});
+
+

@@ -15,12 +15,12 @@
     <h1>Përmbledhje Dietash</h1>
     <div class ="intro-layout">
       <div class = "intro-text">
-    <p>Të hash një dietë të shëndetshme dhe të ekuilibruar është një pjesë e rëndësishme e ruajtjes së shëndetit të mirë dhe mund t'ju ndihmojë të ndiheni më mirë.
+    <p><e>Të hash një dietë të shëndetshme dhe të ekuilibruar është një pjesë e rëndësishme e ruajtjes së shëndetit të mirë dhe mund t'ju ndihmojë të ndiheni më mirë.
 Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhura dhe të konsumoni sasinë e duhur të ushqimit dhe pijeve për të arritur dhe mbajtur një peshë të shëndetshme trupore.
         Adoptimi i një mënyre të shëndetshme të të ushqyerit është një investim afatgjatë në mirëqenie dhe energji ditore. Dieta nuk ka për qëllim privimin, por balancimin e sasisë së ushqimit sipas nevojave të trupit. Çdo trup është unik — disa kërkojnë më shumë kalori për rritje muskulare, të tjerë fokusohen në humbje peshe ose thjesht në mbajtjen e një forme të qëndrueshme. Duke kuptuar gjendjen fizike fillestare dhe qëllimin që synoni, ju mund të përcaktoni më lehtë stilin ushqimor dhe planin e dietës që i përshtatet më së miri ritmit tuaj të jetës.
         Në bazë të qëllimit tuaj - humbje peshe, shtim mase apo mirëmbajtje - ju mund të zgjidhni një nga dietat tona të strukturuara.
         Përdor kalkulatorin BMI në të majtë për të pasur një ide më të qartë rreth gjendjes tënde trupore.
-      </p>
+      </e></p>
     </div>
 
 <section class="tools-section" aria-label="Vegla fitnesi">
@@ -47,194 +47,175 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
   </div>
   </section>
 
-  <hr>
-<table border="1" cellpadding="6" cellspacing="0">
-      <caption><strong> Dieta të shpejta</strong></caption>
-      <thead>
-        <tr>
-          <th>Dieta</th>
-          <th>Qëllimi</th>
-          <th>Kohëzgjatja</th>
-          <th>Shënim</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><p> Bulking</p></td>
-          <td>Shtim masë muskulore</td>
-          <td>8-12 javë</td>
-          <td>Kalori e tejkaluar dhe e shëndetshme</td>
-        </tr>
-        <tr>
-          <td><p> Cutting</p></td>
-          <td>Reduktim dhjam</td>
-          <td>6-12 javë</td>
-          <td>Deficit kalorik i kontrolluar</td>
-        </tr>
-        <tr>
-          <td><p> Mirembajtje</p></td>
-          <td>Ruajtje peshe</td>
-          <td>Vazhdueshëm</td>
-          <td>Balancë kalori/macros</td>
-        </tr>
-        <tr>
-          <td><p> Vegjetarian</p></td>
-          <td>Reduktim Mase trupore</td>
-          <td>Vazhdueshëm</td>
-          <td>Balance kalori/ushqim vegjetarian</td>
-        </tr>
-        <tr>
-          <td><p>Proteine e lartë</p></td>
-          <td>Rritje muskujsh dhe rikuperimi</td>
-          <td>5-10 javë</td>
-          <td>Proteinë të madhe/rikuperimi muskujsh</td>
-        </tr>
-        <tr>
-          <td><p>Low-Carb - Humbje peshe stabile</p></td>
-          <td>Reduktim peshe e shëndetshme</td>
-          <td> 6-10 javë</td>
-          <td>Karbohidrate në numër të vogël</td>
-        </tr>
-      </tbody>
+  <div class="divider"></div>
+
+<section id="diet-list">
+  <h2>Dietat</h2>
+
+  <div class="diet-item" data-target="bulking">
+    <h3>Bulking</h3>
+    <p>Shtim mase muskulore • 8–12 javë</p>
+  </div>
+
+  <div class="diet-item" data-target="cutting">
+    <h3>Cutting</h3>
+    <p>Humbje dhjami • 6–12 javë</p>
+  </div>
+
+  <div class="diet-item" data-target="mirembajtje">
+    <h3>Mirëmbajtje</h3>
+    <p>Ruajtje peshe • Vazhdueshëm</p>
+  </div>
+
+  <div class="diet-item" data-target="vegjetarian">
+    <h3>Vegjetarian</h3>
+    <p>Ushqim bimor • Vazhdueshëm</p>
+  </div>
+
+  <div class="diet-item" data-target="highprotein">
+    <h3>High-Protein</h3>
+    <p>Proteinë e lartë • 5–10 javë</p>
+  </div>
+
+  <div class="diet-item" data-target="lowcarb">
+    <h3>Low-Carb</h3>
+    <p>Karbo të ulëta • 6–10 javë</p>
+  </div>
+</section>
+
+
+<section id="diet-details">
+  <h2>Detajet e dietave</h2>
+
+  <div id="diet-bulking" class="diet-card">
+    <h3>Bulking — Shtim muskujsh</h3>
+
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Shtim mase muskulore me surplus kalorik</td></tr>
+      <tr><th>Kalori</th><td>+300–500 kcal mbi nevojën ditore</td></tr>
+      <tr><th>Proteinë</th><td>1.6–2.2 g/kg peshë trupore</td></tr>
+      <tr><th>Karbohidrate</th><td>Të larta (para dhe pas stërvitjes)</td></tr>
+      <tr><th>Yndyrna</th><td>20–30% e kalorive totale</td></tr>
+      <tr><th>Rekomandim stërvitje</th><td>4–5 ditë peshë, fokus progresiv overload</td></tr>
     </table>
 
-  <hr>
-  
-  <section>
-    <h2>Detajet e dietave</h2>
+    <h4>Shembull dite</h4>
+    <ul>
+      <li>Mëngjes: Tërshërë + qumësht + banane + arra</li>
+      <li>Drekë: Pulë e pjekur + oriz + sallatë</li>
+      <li>Snack: Kos + fruta të thata</li>
+      <li>Pas stërvitjes: Shaker proteine + banane</li>
+      <li>Darkë: Salmon + patate të pjekura + perime</li>
+    </ul>
+  </div>
 
-  
-  
-      <details>
-        <summary><strong>Bulking — Shtim muskujsh</strong></summary>
-        <p><em>Qëllimi:</em> Shtim masë muskulore me një surplus të lehtë kalorik.</p>
+  <div id="diet-cutting" class="diet-card">
+    <h3>Cutting — Humbje dhjamë</h3>
 
-        <fieldset>
-          <legend>Parametra të përgjithshëm</legend>
-          <ul>
-            <li>Kalori: +300–500 kcal mbi nevojën ditore.</li>
-            <li>Proteinë: 1.6–2.2 g/kg trup.</li>
-            <li>Karbohidrate: të larta për energji.</li>
-            <li>Yndyrna: 20–30% e kalorigjisë.</li>
-          </ul>
-        </fieldset>
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Reduktim dhjami duke ruajtur sa më shumë muskul</td></tr>
+      <tr><th>Kalori</th><td>-300–500 kcal nën nevojën ditore</td></tr>
+      <tr><th>Proteinë</th><td>2.0–2.5 g/kg peshë trupore</td></tr>
+      <tr><th>Karbohidrate</th><td>Mesatare, të fokusuar rreth stërvitjes</td></tr>
+      <tr><th>Yndyrna</th><td>20–25% e kalorive</td></tr>
+      <tr><th>Këshilla</th><td>Monitoro peshën 1x në javë, mos e ul shumë shpejt</td></tr>
+    </table>
 
-        <h4>Plani ditor</h4>
-        <ol>
-          <li>Mëngjes: Omëletë me 3 vezë + 2 fetë bukë integrale + banane</li>
-          <li>Snack: Djath cottage + thjerrëza</li>
-          <li>Dreka: Pulë e pjekur + oriz + sallatë</li>
-          <li>Snack para stërvitjes: Smoothie me kos dhe fruta</li>
-          <li>Darka: Salmon + patate të pjekura + perime</li>
-        </ol>
+    <h4>Shembull dite</h4>
+    <ul>
+      <li>Mëngjes: Kos grek + manaferra + pak bajame</li>
+      <li>Drekë: Fileto pule + sallatë jeshile + quinoa</li>
+      <li>Snack: Mollë + gjysmë grushti arra</li>
+      <li>Pas stërvitjes: Shaker proteine</li>
+      <li>Darkë: Peshk i pjekur + perime të ziera</li>
+    </ul>
+  </div>
 
-        <h5>Intakes</h5>
-        <table border="1" cellpadding="4">
-          <tr><th>Proteinë</th><th>Karbo</th><th>Yndyrë</th></tr>
-          <tr><td>180 g</td><td>400 g</td><td>90 g</td></tr>
-        </table>
-      </details>
-      
-   
+  <div id="diet-maintenance" class="diet-card">
+    <h3>Mirëmbajtje — Ruajtje peshe</h3>
 
- 
-  
-      <details>
-        <summary><strong>Cutting — Humbje dhjamë</strong></summary>
-        <p><em>Qëllimi:</em> Reduktim i përqindjes së dhjamit duke ruajtur sa më shumë muskul.</p>
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Mbajtja e peshës aktuale dhe energjisë ditore</td></tr>
+      <tr><th>Kalori</th><td>Rreth nevojës ditore</td></tr>
+      <tr><th>Proteinë</th><td>1.6–2.0 g/kg</td></tr>
+      <tr><th>Karbohidrate</th><td>Të balancuara sipas aktivitetit</td></tr>
+      <tr><th>Yndyrna</th><td>25–30% e kalorive</td></tr>
+      <tr><th>Fleksibilitet</th><td>Mund të përfshihen “cheat meals” të kontrolluara</td></tr>
+    </table>
 
-        <fieldset>
-          <legend>Parametra të përgjithshëm</legend>
-          <ul>
-            <li>Kalori: -300–500 kcal nën nevojën ditore</li>
-            <li>Proteinë: 2.0–2.5 g/kg trup për ruajtje muskulore</li>
-            <li>Karbohidrate: mesatare, të fokusuara rreth stërvitjes</li>
-            <li>Yndyrna: 20–25% e kalorigjisë</li>
-          </ul>
-        </fieldset>
+    <h4>Shembull jave</h4>
+    <ul>
+      <li>2 vakte me peshk</li>
+      <li>2 vakte me mish pule/gjeli</li>
+      <li>1 vakt me mish të kuq të ligët</li>
+      <li>Perime çdo ditë + fruta 1–2x në ditë</li>
+    </ul>
+  </div>
 
-        <h4>Plani ditor</h4>
-        <ol>
-          <li>Mëngjes: Kos grek + fruta të pyllit + 1 lugë arrë kikiriku</li>
-          <li>Snack: Një mollë + pak bajame</li>
-          <li>Dreka: Sallatë me pulë/ton + quinoa</li>
-          <li>Snack pas stërvitjes: Shaker proteine + banane</li>
-          <li>Darka: Perime të ziera + fileto peshku</li>
-        </ol>
+  <div id="diet-veg" class="diet-card">
+    <h3>Vegjetarian — Ushqim bimor</h3>
 
-        <h5>Keshilla</h5>
-        <ul>
-          <li>Përqendrohu te proteina dhe densiteti ushqimor.</li>
-          <li>Mbaj shënim kalorite dhe progresin.</li>
-        </ul>
-      </details>
-  
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Reduktim mase trupore dhe stil më i shëndetshëm</td></tr>
+      <tr><th>Kalori</th><td>Sipas qëllimit (deficit ose mirëmbajtje)</td></tr>
+      <tr><th>Proteinë</th><td>1.6–2.2 g/kg nga burime bimore</td></tr>
+      <tr><th>Burime proteine</th><td>Thjerrëza, qiqra, tofu, fasule, qumësht soje</td></tr>
+      <tr><th>Karbohidrate</th><td>Të larta nga drithëra dhe fruta</td></tr>
+      <tr><th>Yndyrna</th><td>Arra, fara chia, vaj ulliri</td></tr>
+    </table>
 
-    
-      <details>
-        <summary><strong>Mirembajtje — Ruajtje peshe</strong></summary>
-        <p><em>Qëllimi:</em> Të qëndrosh në peshën e dëshiruar dhe të ruash performancën.</p>
+    <h4>Shembull dite</h4>
+    <ul>
+      <li>Mëngjes: Tërshërë me qumësht soje + fruta</li>
+      <li>Drekë: Oriz integral + thjerrëza + sallatë</li>
+      <li>Snack: Fara + arra miks</li>
+      <li>Darkë: Tofu i pjekur + perime në zgarë</li>
+    </ul>
+  </div>
 
-        <fieldset>
-          <legend>Parametra</legend>
-          <ul>
-            <li>Kalori: rreth nevojës ditore</li>
-            <li>Proteinë: 1.6–2.0 g/kg</li>
-            <li>Balancë karbo/yndyrë sipas preferencës</li>
-          </ul>
-        </fieldset>
+  <div id="diet-highprotein" class="diet-card">
+    <h3>High-Protein — Proteinë e lartë</h3>
 
-        <h4>Plani javor</h4>
-        <p>Ndërro llojet e ushqimit për të ruajtur variacionin: dy vakte me peshk, dy me pulë, një me mish i kuq të ligët, perime çdo ditë dhe karbohidrate të kompletuara.</p>
-      </details>
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Rikuperim, tonifikim dhe ruajtje muskulare</td></tr>
+      <tr><th>Proteinë</th><td>2.2–2.8 g/kg</td></tr>
+      <tr><th>Karbohidrate</th><td>Mesatare</td></tr>
+      <tr><th>Yndyrna</th><td>Të ulëta–mesatare</td></tr>
+      <tr><th>Më e përshtatshme për</th><td>Faza definimi ose recomp</td></tr>
+    </table>
 
-  <details>
-    <summary><strong>High-Protein — Rritje Proteine</strong></summary>
-    <p><em>Qëllimi:</em> Maksimizim rikuperimi, ruajtje muskulore dhe ndihmë në humbjen e dhjamit.</p>
+    <h4>Shembull dite</h4>
+    <ul>
+      <li>Mëngjes: Vezë + të bardha + perime</li>
+      <li>Snack: Shaker whey + banane</li>
+      <li>Drekë: Pulë + oriz + perime</li>
+      <li>Snack: Kos grek + fara chia</li>
+      <li>Darkë: Gjel deti + sallatë</li>
+    </ul>
+  </div>
 
-    <fieldset>
-      <legend>Parametra</legend>
-      <ul>
-        <li>Proteinë: 2.2–2.8 g/kg</li>
-        <li>Karbohidrate: të moderuara</li>
-        <li>Yndyrna: të ulëta–mesatare</li>
-      </ul>
-    </fieldset>
+  <div id="diet-lowcarb" class="diet-card">
+    <h3>Low-Carb — Humbje peshe e qëndrueshme</h3>
 
-    <h4>Plani ditor</h4>
-    <ol>
-      <li>Vezë + të bardha + perime</li>
-      <li>Shaker whey + banane</li>
-      <li>Pulë + oriz + perime</li>
-      <li>Gresk yogurt + mjaltë</li>
-      <li>Turkey breast + sallatë</li>
-    </ol>
-  </details>
+    <table class="diet-detail">
+      <tr><th>Qëllimi</th><td>Humbje dhjami me karbo të ulëta</td></tr>
+      <tr><th>Karbohidrate</th><td>80–140 g/ditë</td></tr>
+      <tr><th>Proteinë</th><td>E lartë</td></tr>
+      <tr><th>Yndyrna</th><td>Mesatare</td></tr>
+      <tr><th>Fokus</th><td>Perime, mish i ligët, yndyrna të shëndetshme</td></tr>
+    </table>
 
-  <details>
-    <summary><strong>Low-Carb — Humbje Peshe e Qëndrueshme</strong></strong></summary>
-    <p><em>Qëllimi:</em> Humbje dhjami pa kufizime ekstreme.</p>
-
-    <fieldset>
-      <legend>Parametra</legend>
-      <ul>
-        <li>Karbo: 80–140 g/ditë</li>
-        <li>Proteinë e lartë</li>
-        <li>Yndyrna të moderuara</li>
-      </ul>
-    </fieldset>
-
-    <h4>Plani ushqimor</h4>
-    <ol>
-      <li>Omeletë + domate</li>
-      <li>Pulë + perime të ziera</li>
-      <li>Sallatë me ton + vezë</li>
-      <li>Peshk + sallatë jeshile</li>
-    </ol>
-  </details>
+    <h4>Shembull dite</h4>
+    <ul>
+      <li>Mëngjes: Omeletë me perime</li>
+      <li>Drekë: Pulë + sallatë jeshile</li>
+      <li>Snack: Arra ose bajame</li>
+      <li>Darkë: Peshk + brokoli + sallatë</li>
+    </ul>
+  </div>
 </section>
+
  
-  <hr>
 
 
   <footer>
