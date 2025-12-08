@@ -29,16 +29,6 @@ summary{
   cursor: pointer;
 }
 
- table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-td, th {
-  padding: 0.6rem 0.8rem;
-}
-
 
 .diet-table {
   width: 100%;
@@ -110,6 +100,45 @@ td, th {
   background-color: #f3f4f6;
 }
 
+#diet-details {
+  display: none;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.diet-card {
+  display: none;         
+  background: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(6, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.diet-card h3 {
+  margin-bottom: 10px;
+}
+
+.diet-card.active {
+  display: block;
+}
+
+.diet-detail {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.diet-detail th,
+.diet-detail td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.diet-detail th {
+  width: 40%;
+  font-weight: 600;
+}
 
   fieldset {
   border: 2px solid black;
@@ -121,12 +150,7 @@ td, th {
   table th{
     font-weight: bold;
   }
-  details{
-    border: 1px solid black;
-    border-radius: 8px;
-    padding:10px;
-    margin: 15px 0;
-  }
+ 
  
 * {
   box-sizing: border-box;
