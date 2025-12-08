@@ -23,39 +23,42 @@ document.getElementById("bmi-form").addEventListener("submit", function(e){
     result.style.color = "#111";
 });
 
+
+
 const rowToDetailsMap = {
-  Bulking: 'dieta-bulking',
-  Cutting: 'dieta-cutting',
-  Mirembajtje: 'dieta-mirembajtje',
-  Vegjetarian: 'dieta-vegjetariane',
-  HighProtein: 'dieta-highProtein',
-  Lowcarb: 'dietalowcarb'
+  bulking: 'diet-bulking',
+  cutting: 'diet-cutting',
+  mirembajtje: 'diet-maintenance',
+  vegjetarian: 'diet-veg',
+  highprotein: 'diet-highprotein',
+  lowcarb: 'diet-lowcarb'
 };
 
-const dietRows = document.querySelectorAll('.diet-table tbody tr');
+document.addEventListener('DOMContentLoaded', () => {
+  const dietRows = document.querySelectorAll('.diet-table tbody tr');
 
-dietRows.forEach(row => {
-  row.style.cursor = 'pointer';
+  dietRows.forEach(row => {
+    row.style.cursor = 'pointer';
 
-  row.addEventListener('click', () => {
-    
-    const detailsSection = document.getElementById('diet-details');
-if (detailsSection) detailsSection.style.display = 'block';
-    const key = row.dataset.target;
-    const detailsId = rowToDetailsMap[key];
-    if (!detailsId) return;
+    row.addEventListener('click', () => {
+      const detailsSection = document.getElementById('diet-details');
+      if (detailsSection) detailsSection.style.display = 'block';
 
-    document.querySelectorAll('section details').forEach(d => {
-      d.open = false;
+      const key = row.dataset.target;          
+      const detailsId = rowToDetailsMap[key]; 
+      if (!detailsId) return;
+
+      document.querySelectorAll('.diet-card').forEach(card => {
+        card.classList.remove('active');
+      });
+
+      const card = document.getElementById(detailsId);
+      if (card) {
+        card.classList.add('active');
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
-
-    const targetDetails = document.getElementById(detailsId);
-    if (targetDetails) {
-      targetDetails.setAttribute("open", true);
-targetDetails.querySelector("summary").focus();
-targetDetails.scrollIntoView({ behavior: "smooth", block: "start" });
-
-    }
   });
 });
+
 
