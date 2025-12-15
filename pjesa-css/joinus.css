@@ -8,43 +8,43 @@ body {
 
 .footeri {
     background-color: #f5f5f5;
-    padding-bottom: 40px; /* Hapësirë poshtë */
+    padding-bottom: 40px; 
 }
 #nagjeni{
   text-align: center;
 }
   /* Pjesa e Mapit */
 #mapi {
-    width: 100%;             /* Zë hapësirë sa ka vend, por... */
-    max-width: 1100px;       /* ...nuk bëhet më i gjerë se 1100px (e mban kompakt) */
-    height: 300px;           /* E zvogëlova lartësinë nga 400px në 300px */
-    margin: 0 auto 40px auto; /* "0 auto" e qendron mapin në mes të ekranit */
+    width: 100%;            
+    max-width: 1100px;       
+    height: 300px;           
+    margin: 0 auto 40px auto; /* mapi ne mes te ekranit */
     display: block;
-    border-radius: 10px;     /* Opsionale: I rrumbullakos pak qoshet për pamje më të butë */
-    overflow: hidden;        /* Siguron që qoshet e rrumbullakosura të duken */
+    border-radius: 10px;     
+    overflow: hidden;        
 }
 .footer-content {
     display: flex;
-    flex-direction: row; /* I vendos në rresht horizontal */
-    justify-content: space-around; /* I shpërndan me hapësirë të barabartë */
-    align-items: flex-start; /* I rreshton nga fillimi lart */
-    flex-wrap: wrap; /* Nëse ekrani është i vogël, lejoji të dalin poshtë */
-    max-width: 1200px; /* Që mos të shpërndahen pafundësisht në ekrane gjigante */
-    margin: 0 auto; /* E qendron në mes */
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; /* ne mes */
     padding: 0 20px;
 }
 
 
 /* Secila kolone e footerit */
 .footer-col {
-   text-align: left; /* Teksti majtas duket më mirë në footer horizontal, ose mund ta lësh center */
-   width: 22%; /* Secila zë rreth 1/4 e hapësirës */
+   text-align: left; 
+   width: 22%; 
    min-width: 200px;
 }
 
 
 .logo-col img {
-    width: 200px; /* E zvogëlova pak që të përshtatet më mirë */
+    width: 200px; 
     margin-bottom: 20px; 
 }
 
@@ -53,7 +53,7 @@ body {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: orange; /* Për estetikë */
+    color: orange; 
 }
 
 /* Lista e navigimit*/
@@ -166,14 +166,43 @@ box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 @media (max-width: 768px) {
    @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Në celular kthehen vertikalisht */
+        flex-direction: column; 
         align-items: center;
         gap: 30px;
     }
 
     .footer-col {
         width: 100%; 
-        text-align: center; /* Në celular duket më mirë në qendër */
+        text-align: center; 
     }
 }
+}
+/*  FAQ  */
+.faq{
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+.faq-item{
+  margin-bottom:20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.faq-item h3{
+  font-size:18px;
+  color:#333;
+  margin-bottom:5px ;
+}
+.faq-item{
+  font-size: 16px;
+  color:#666
 }
