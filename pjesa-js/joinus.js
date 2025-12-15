@@ -27,6 +27,9 @@ forma.addEventListener('submit', function(event) {
             icon: 'error',
             confirmButtonText: 'Në rregull',
             confirmButtonColor: '#e69500'
+
+            
         });
     }
+    fushaEmail.value = '';
 });
