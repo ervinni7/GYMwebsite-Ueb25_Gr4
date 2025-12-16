@@ -13,14 +13,7 @@
 
     </header>
  <main style="text-align: center;">
-    <div class="form">
-    <form action="" id="formaRegjistrimit" >
-               <h2><label for="email">Bashkohuni me ne!</label></h2>  <br>
-               <p>Plotësojeni emailin për t’u regjistruar dhe për të marrë ofertat tona më të fundit.</p> <br>
-        <input type="email" name="email" id="email" placeholder="Sheno emailin: " size="40" required><br>
-        <input type="submit" value="Sign Up!" id="signup" name="signup">
-
-    </form> 
+  
 </div>
 </main><hr>
 <section class="map-section">
@@ -65,7 +58,7 @@
        </div>
    </section> <hr>
 
-   <section class="faq">
+   <section class="faq" data-aos="fade-up" data-aos-delay="100">
         <h2>Pyetje te shpeshta</h2>
         <div class="faq-item">
             <h3>Sa kushton muaji?</h3>
@@ -81,21 +74,32 @@
         </div>
    </section> 
 
-<footer class="footeri">       
+<footer class="footeri"> 
+        <div class="email-bar" data-aos="fade-up">
+        <div class="email-content">
+            <h3>📩 MOS I HUMBISNI OFERTAT!</h3>
+            <p>Regjistrohuni me email për të marrë njoftime për pakot dhe zbritjet e reja.</p>
+        </div>
+        
+        <form action="" class="email-input">
+            <input type="email" placeholder="Shkruani emailin tuaj..." required>
+            <button type="submit">REGJISTROHU</button>
+        </form>
+    </div>
     <div class="footer-content">
         
-        <div class="footer-col logo-col">
+        <div class="footer-col logo-col" data-aos="fade-up" data-aos-delay="0">
             <a href="kreu.html"><img src="/fotot/logo.png" alt="Logo"></a>
         </div>
 
-        <div class="footer-col orar">
+        <div class="footer-col orar" data-aos="fade-up" data-aos-delay="100">
             <h3>ORARI:</h3>
             <p><span class="dita">Hënë - E Premte:</span> <br><span class="ora">06:00 - 22:00</span></p>
             <p><span class="dita">E Shtunë:</span> <br><span class="ora">08:00 - 20:00</span></p>
             <p><span class="dita">E Diel:</span> <br><span class="ora">10:00 - 18:00</span></p>
         </div>
 
-        <div class="footer-col">
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
             <h3>NAVIGIMI:</h3>
             <ul>
                 <li><a href="kreu.html">Kreu</a></li>
@@ -105,7 +109,7 @@
             </ul>
         </div>
 
-        <div class="footer-col">
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
             <h3>NA KONTAKTONI:</h3>
             <ul>
                 <li><a href="https://maps.app.goo.gl/YuvtAF32VmugpQxi7" target="_blank">📍Rruga B</a></li>
@@ -115,7 +119,7 @@
             </ul>
         </div>
     </div> 
-  <div class="copyright-bar">
+  <div class="copyright-bar" data-aos="fade-in" data-aos-delay="400">
         <p>&copy; 2025 E's GYM. Të gjitha të drejtat e rezervuara.</p>
     </div>
   </footer>
@@ -124,7 +128,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init(); // Kjo e ndez librarinë
+  AOS.init({
+    once: true,       
+    duration: 1000,   
+    offset: 100,      
+    easing: 'ease-out-cubic', 
+  });
 </script>
 <script src="/pjesa-js/joinus.js"></script>
 </body>
