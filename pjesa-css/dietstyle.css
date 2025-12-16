@@ -171,17 +171,71 @@ html, body {
 section li{
   margin-left: 20px;
 }
-.footer-bottom{
+.site-footer {
+  background: #0b0b0b;
+  color: #ffffff;
+  padding: 40px 60px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h4 {
+  color: #ff8800;
+  margin-bottom: 12px;
+}
+
+.footer-col p,
+.footer-col li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  color: #ff8800;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
   text-align: center;
-  font-size: 13px;
   border-top: 1px solid #333;
-  padding-top: 12px;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
   color: #aaa;
 }
-.footerkontakt{
-  text-align: center;
-  margin-top: 50px;
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
 }
+
 
 .tools-section p{
   text-align: center;
