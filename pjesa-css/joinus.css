@@ -4,7 +4,105 @@ body {
         height: 100%;
          font-family: Arial, sans-serif;
         background: #f5f5f5;
+        overflow-x: hidden
 }
+
+.kontakt-main{
+  position: relative;
+  background-image:url("/fotot/backgroundjoinus.avif");
+  background-size: cover;
+    background-position: center;
+  padding: 80px 20px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontakt-overlay{
+  position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+.kontakt-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+.kontakt-text{
+  flex: 1;
+  color: white;
+  min-width: 300px;
+}
+
+.kontakt-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.kontakt-text p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.kontakt-form{
+  flex:1;
+  max-width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  border-top: 5px solid orange;
+}
+
+.kontakt-form h3{
+  text-align: center;
+  margin-bottom: 20px;
+  color:#333;
+}
+.kontakt-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.kontakt-btn:hover {
+background-color: #e69500;
+    transform: translateY(-2px); 
+  }
+
+.kontakt-input{
+  width:100%;
+  padding:12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}  
+.kontakt-input:focus {
+    border-color: orange;     
+    background-color: white; 
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); 
+}
+
 hr {
     border: 0;
     height: 3px;
@@ -227,68 +325,8 @@ hr {
     color: #aaa;       
     font-size: 14px;
 }
-
-/* Pjesa e Label */
-#email {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-/*Kur Useri eshte duke shenuar emailin */
-#email:focus, #signup:focus {
-    border-color: #ff7f50;
-    box-shadow: 0 0 5px rgba(255, 127, 80, 0.6);
-}
-
-     
-/* Pjesa e butonit */
-#signup {
-        margin-top: 20px;
-        padding: 12px 30px;
-        background-color: orange;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: 0.2s;
-}
-#signup #email{
-  width: 80%;
-}
-
-            
-/* Butoni signup me kursor*/      
-#signup:hover {
-background-color: #e69500;
-}
-
    
- /* Pjesa e katrorit  */       
-.form { 
- background: #fff;
- width: 60%;
- margin: 100px auto;
- padding: 40px;
-border-radius: 12px;
-box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
-}
 
-@media (max-width: 768px) {
-   @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column; 
-        align-items: center;
-        gap: 30px;
-    }
-
-    .footer-col {
-        width: 100%; 
-        text-align: center; 
-    }
-}
-}
 /*  FAQ  */
 .faq {
     padding: 50px 40px;
@@ -336,3 +374,70 @@ box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
     margin: 0;
     padding-left:15px;
 }
+/* pjesa e regjistrimit ne footer*/
+.email-bar {
+    background-color: #1a1a1a; 
+    border-bottom: 1px solid #333; 
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    width: 100%;
+    margin-bottom: 50px; 
+}
+
+/* Teksti majtas */
+.email-content h3 {
+    color: #ff8800;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.email-content p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Forma djathtas */
+.email-input {
+    display: flex;
+    gap: 10px;
+}
+
+.email-input input {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    background-color: #000; /* Input i zi */
+    color: white;
+    outline: none;
+}
+
+.email-input input:focus {
+    border-color: #ff8800;
+}
+
+.email-input button {
+    padding: 12px 30px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.email-input button:hover {
+    background-color: white;
+    color: #ff8800;
+    transform: scale(1.05);
+}
+
+
