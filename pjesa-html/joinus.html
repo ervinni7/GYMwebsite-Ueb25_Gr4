@@ -18,35 +18,70 @@
                <h2><label for="email">Bashkohuni me ne!</label></h2>  <br>
                <p>Plotësojeni emailin për t’u regjistruar dhe për të marrë ofertat tona më të fundit.</p> <br>
         <input type="email" name="email" id="email" placeholder="Sheno emailin: " size="40" required><br>
-                
-
         <input type="submit" value="Sign Up!" id="signup" name="signup">
 
     </form> 
 </div>
 </main><hr>
+<section class="map-section">
+       
+       <div class="map-card" data-aos="fade-up">
+           
+           <div class="map-header">
+               <h3 id="nagjeni">NA GJENI TEK:</h3>
+               <button id="btn-udhezime" class="btn-directions">
+                   📍 Merr Udhëzime
+               </button>
+           </div>
 
-<footer class="footeri">
-  <h3 id="nagjeni">NA GJENI TEK:</h3>
-    <div id="mapi">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5928503259615!2d21.167150700000004!3d42.648790700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFaculty%20of%20Technology!5e0!3m2!1sen!2s!4v1765804472914!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-<hr>
-<section class="faq">
-    <h2>Pyetje te shpeshta</h2>
-    <div class="faq-item">
-        <h3>Sa kushton muaji?</h3>
-        <p>Muaji kushton 20 Euro. Kemi edhe oferta për studentë.</p>
-    </div>
-    <div class="faq-item">
-        <h3>A keni trajner personal?</h3>
-        <p>Po, kemi trajnerë që mund t'i paguani ekstra për stërvitje private.</p>
-    </div>
-    <div class="faq-item">
-        <h3>Kur është hapur palestra?</h3>
-        <p>Jemi hapur çdo ditë nga ora 06:00 deri në 22:00.</p>
-    </div>
-  </section> <hr>
+           <div id="mapi-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5928503259615!2d21.167150700000004!3d42.648790700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFaculty%20of%20Technology!5e0!3m2!1sen!2s!4v1765804472914!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+
+           <div id="udhezimet-text" style="display: none;">
+               <div class="steps-container">
+                   <h4>Si të arrini tek E's GYM?</h4>
+                   
+                   <div class="step">
+                       <span class="icon">🚌</span>
+                       <p><strong>Me Autobus:</strong> Merrni linjën 4 ose 3. Zbrisni tek stacioni "Bregu i Diellit" ose "Fakulteti Teknik". Palestra është 2 minuta larg në këmbë.</p>
+                   </div>
+
+                   <div class="step">
+                       <span class="icon">🚗</span>
+                       <p><strong>Me Veturë:</strong> Nga qendra, ndiqni rrugën "Agim Ramadani" drejt Fakultetit Teknik. Kemi parking falas prapa ndërtesës.</p>
+                   </div>
+
+                   <div class="step">
+                       <span class="icon">🚶</span>
+                       <p><strong>Në Këmbë:</strong> Nëse jeni tek "Rruga B", ecni drejt rreth rrotullimit kryesor dhe ngjituni lart drejt pishinave.</p>
+                   </div>
+                   
+                   <br>
+                   <a href="https://maps.google.com" target="_blank" class="google-link">Hape direkt në Google Maps ➜</a>
+               </div>
+           </div>
+
+       </div>
+   </section> <hr>
+
+   <section class="faq">
+        <h2>Pyetje te shpeshta</h2>
+        <div class="faq-item">
+            <h3>Sa kushton muaji?</h3>
+            <p>Muaji kushton 20 Euro. Kemi edhe oferta për studentë.</p>
+        </div>
+        <div class="faq-item">
+            <h3>A keni trajner personal?</h3>
+            <p>Po, kemi trajnerë që mund t'i paguani ekstra për stërvitje private.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Kur është hapur palestra?</h3>
+            <p>Jemi hapur çdo ditë nga ora 06:00 deri në 22:00.</p>
+        </div>
+   </section> 
+
+<footer class="footeri">       
     <div class="footer-content">
         
         <div class="footer-col logo-col">
@@ -80,7 +115,9 @@
             </ul>
         </div>
     </div> 
-  
+  <div class="copyright-bar">
+        <p>&copy; 2025 E's GYM. Të gjitha të drejtat e rezervuara.</p>
+    </div>
   </footer>
 
 
