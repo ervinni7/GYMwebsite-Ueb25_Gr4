@@ -26,3 +26,47 @@ if (btnUdhezime && mapContainer && textContainer) {
         }
     });
 } 
+const emailForm = document.querySelector('.email-input');
+
+if (emailForm) {
+    emailForm.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        // 1. Marrim vlerën që ka shkruar përdoruesi
+        const emailValue = this.querySelector('input[type="email"]').value;
+
+        // 2. Krijojmë një rregull (Regex) për të kontrolluar emailin
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // 3. Kontrollojmë: A është emaili i saktë?
+        if (emailPattern.test(emailValue)) {
+            
+            // --- SKENARI I SUKSESIT ---
+            Swal.fire({
+                title: 'Faleminderit!',
+                text: 'U regjistruat me sukses për ofertat tona!',
+                icon: 'success',
+                background: '#1a1a1a',       // Sfond i zi
+                color: '#ffffff',            // Tekst i bardhë
+                confirmButtonColor: '#ff8800', 
+                iconColor: '#ff8800'
+            });
+
+            // Pastrojmë fushën vetëm nëse është sukses
+            this.querySelector('input[type="email"]').value = '';
+
+        } else {
+
+            // --- SKENARI I GABIMIT (Invalid Email) ---
+            Swal.fire({
+                title: 'Gabim!',
+                text: 'Ju lutemi shkruani një email të vlefshëm (p.sh. emri@mail.com)',
+                icon: 'error',               // Ikona e kuqe e gabimit
+                background: '#1a1a1a',       // Sfond i zi
+                color: '#ffffff',            // Tekst i bardhë
+                confirmButtonColor: '#ff8800',
+                confirmButtonText: 'Provo Përsëri'
+            });
+        }
+    });
+}
