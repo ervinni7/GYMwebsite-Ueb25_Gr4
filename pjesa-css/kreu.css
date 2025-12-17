@@ -21,6 +21,18 @@ body {
   background: white;
   border-radius: 8px;
   border: 1px solid #ddd;
+  /* Animacion fade-in kur hapet faqja */
+  animation: fadeIn 1s ease-in;
+}
+
+/* Animacioni fadeIn - bën që përmbajtja të shfaqet gradualisht */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Seksioni Hero me titull dhe slogan*/
@@ -52,6 +64,20 @@ body {
   background: #fafafa;
   border-left: 4px solid #ff8800;
   flex-wrap: wrap;
+  /* Animacion slide-in nga e majta */
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Animacioni slideIn - kartela vijnë nga ana e majtë */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .row img {
   width: 280px;
@@ -64,6 +90,13 @@ body {
 .card-text {
   max-width: 550px;
   flex: 1; /* Zgjerimi sipas nevojës */
+  /* Transition për efekt të butë kur e lëvizim mouse-in */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card-text:hover {
+  /* Zmadhon pak tekstin kur e vë mouse-in mbi të */
+  transform: scale(1.05);
 }
 .card-text h3 {
   color: #333;
@@ -108,10 +141,14 @@ body {
   font-weight: bold;
   border: 2px solid #ff8800;
   cursor: pointer;
+  /* Transition për ndryshim të butë të ngjyrave */
+  transition: all 0.3s ease;
 }
 .btn:hover {
   background: white;
   color: #ff8800;
+  /* Butoni rritet pak kur e vë mouse-in mbi të */
+  transform: scale(1.05);
 }
 
 /*  Media query për ekrane të vogla*/
