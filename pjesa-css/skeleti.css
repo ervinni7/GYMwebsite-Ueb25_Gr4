@@ -59,6 +59,7 @@ header {
 /* Content frame for loaded pages */
 #content-frame {
   width: 100%;
+  height: 100%;
   border: none;
   min-height: calc(100vh - 100px);
 }
