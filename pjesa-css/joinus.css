@@ -203,6 +203,69 @@ background-color: #111;
     font-weight: bold;
     text-decoration: none;
 }
+.faq{
+  padding: 60px 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.faq h2{
+  text-align: center;
+  color: orange;
+  margin-bottom:30px;
+  font-size:28px; 
+}
+
+.faq-item{
+border-bottom:1px solid #eee;
+margin-bottom: 10px;
+}
+
+.faq-pyetje{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-pyetje h3 {
+  font-size: 19px;
+  color: #333;
+  margin: 0;
+}
+.faq-plusi{
+  font-size: 24px;
+  color: orange;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.faq-pyetje:hover{
+  background-color: #f9f9f9;
+}
+.faq-pergjigjje{
+  display: none;
+  padding: 0 10px 20px 10px;
+  color:#666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+/* Kjo pjese */
+.faq-item.active .faq-pergjigjje{
+  display: block;
+}
+
+.faq-item.active .faq-plusi{
+  transform: rotate(45deg);
+  color:#333;
+}
+
+
+
 .footer-content {
     display: flex;
     flex-direction: row;
