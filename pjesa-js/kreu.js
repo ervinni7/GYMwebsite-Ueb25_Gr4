@@ -80,6 +80,28 @@ function shfaqCitate() {
   setInterval(ndryshoCitate, 5000); // Ndërro çdo 5 sekonda
 }
 
+// Efekt typing për titullin
+function efektiTyping() {
+  const title = document.querySelector('#kreu-title');
+  const teksti = title.textContent;
+  title.textContent = '';
+  title.style.borderRight = '2px solid #ff8800';
+  title.style.paddingRight = '5px';
+  
+  let i = 0;
+  const timer = setInterval(() => {
+    if (i < teksti.length) {
+      title.textContent += teksti.charAt(i);
+      i++;
+    } else {
+      clearInterval(timer);
+      setTimeout(() => {
+        title.style.borderRight = 'none';
+      }, 500);
+    }
+  }, 150); // Shto shkronjë çdo 150ms
+}
+
 // Butoni "Shko në krye" që shfaqet kur bën scroll poshtë
 function krijoButonScrollTop() {
   // Krijo butonin
@@ -135,9 +157,62 @@ function krijoButonScrollTop() {
   });
 }
 
+// Shfaq kohën aktuale në seksionin e orarit
+function shfaqKohenAktuale() {
+  const infoLine = document.querySelector('.info-line');
+  infoLine.style.display = 'flex';
+  infoLine.style.justifyContent = 'space-between';
+  infoLine.style.alignItems = 'center';
+  infoLine.style.padding = '10px 15px';
+  
+  // Krijo div për kohën
+  const kohaDiv = document.createElement('div');
+  kohaDiv.style.cssText = `
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #ff8800 0%, #ff6600 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    min-width: 160px;
+    text-align: center;
+    transition: all 0.3s ease;
+  `;
+  
+  // Efekt hover
+  kohaDiv.addEventListener('mouseenter', () => {
+    kohaDiv.style.transform = 'scale(1.05)';
+    kohaDiv.style.boxShadow = '0 6px 20px rgba(255, 136, 0, 0.4)';
+  });
+  
+  kohaDiv.addEventListener('mouseleave', () => {
+    kohaDiv.style.transform = 'scale(1)';
+    kohaDiv.style.boxShadow = '0 4px 15px rgba(255, 136, 0, 0.3)';
+  });
+  
+  // Funksion për të përditësuar kohën
+  function perditsoKohen() {
+    const tani = new Date();
+    const ore = String(tani.getHours()).padStart(2, '0');
+    const minuta = String(tani.getMinutes()).padStart(2, '0');
+    const sekonda = String(tani.getSeconds()).padStart(2, '0');
+    kohaDiv.textContent = `🕒 ${ore}:${minuta}:${sekonda}`;
+  }
+  
+  // Përditëso kohën çdo sekondë
+  perditsoKohen();
+  setInterval(perditsoKohen, 1000);
+  
+  infoLine.appendChild(kohaDiv);
+}
+
 // Ekzekuto të gjitha funksionet kur faqja ngarkohet
 window.addEventListener('DOMContentLoaded', function() {
+  efektiTyping();
   shfaqPershendetje();
   shfaqCitate();
   krijoButonScrollTop();
+  shfaqKohenAktuale();
 });
