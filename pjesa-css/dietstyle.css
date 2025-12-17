@@ -1,5 +1,4 @@
   body{
-    margin: 20px;
     line-height: 1.6;
   }
   h1{
@@ -8,7 +7,6 @@
     margin-bottom: 20px;
     
   }
-
 
 
 .intro-section {
@@ -20,7 +18,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
-  gap: 100px;          
+  gap: 95px;          
 }
 
 .intro-text p:not(:last-child) {
@@ -139,17 +137,7 @@
   width: 40%;
   font-weight: 600;
 }
-
-  fieldset {
-  border: 2px solid black;
-}
-  header p{
-    font-size: 25px;
-    padding-bottom: 40px;
-  }
-  table th{
-    font-weight: bold;
-  }
+ 
  
 * {
   box-sizing: border-box;
@@ -163,101 +151,231 @@ html, body {
   color: #333;
 }
 
-.footer-logo {
-    width: 150px;
-    max-width: 100%;
-    display: block;
+
+/*footeri*/
+.footeri {
+background-color: #111;
+    color: #eee;
+    padding-top: 0px; 
+    border-top: 3px solid #ff8800;
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; /* ne mes */
+    padding: 0 20px;
 }
 
 
-#content-frame {
-  width: 100%;
-  border: none;
-  min-height: calc(100vh - 100px);
-}
-
-
-@media (max-width: 760px) {
-  .intro-layout {
-    flex-direction:column
-  }
-  header {
-    flex-direction: column;
-    padding: 10px;
-  }
-  .nav-wrap {
-    margin-top: 10px;
-  }
-  .nav-table td {
-    padding: 8px 12px;
-  }
-}
-section li{
-  margin-left: 20px;
-}
-.site-footer {
-  background: #0b0b0b;
-  color: #ffffff;
-  padding: 40px 60px 20px;
-  margin-top: 40px;
-}
-
-.footer-container {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
+/* Secila kolone e footerit */
 .footer-col {
-  flex: 1;
-  min-width: 220px;
+    flex: 1;             
+    min-width: 220px;    
+    text-align: left;
 }
 
-.footer-col h4 {
-  color: #ff8800;
-  margin-bottom: 12px;
+
+.logo-col img {
+    width: 180px;
+    margin-bottom: 20px;
+    
+    
 }
 
-.footer-col p,
-.footer-col li {
-  font-size: 14px;
-  line-height: 1.6;
+/* Titujt e kolonav*/
+.footer-col h3 {
+    color: #ff8800;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.footer-col a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer-col a:hover {
-  text-decoration: underline;
-  color: #ff8800;
-}
-
+/* Lista e navigimit*/
 .footer-col ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+}
+.footer-col li{
+  font-size: large;
 }
 
+/*Elementet e navigimit,hapesira*/
 .footer-col ul li {
-  margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 15px;
-  font-size: 13px;
-  color: #aaa;
+/*Elementet e rreth nesh, linqet */
+.footer-col ul li a {
+    text-decoration: none;
+    color: #ccc;        
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block; 
+}
+
+/* Ndryshon ngjyren me kursor tek Rreth Nesh*/
+.footer-col ul li a:hover {
+    color: #ff8800;     
+    transform: translateX(5px); /* leviz djathtas */
+}
+/*ndryshimi i imazhit */
+.logo-col img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+.logo-col a:hover img {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+/*Logoja dhe orari */
+.logo-col .orar {
+    margin-top: 10px;
+}
+
+.logo-col .orar h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #000;
+}
+
+.logo-col .orar p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 15px;
+}
+/* per permiresim te orarit */
+.dita {
+color: #fff;        
+    font-weight: bold;
+    font-size: 15px;
+    display: block;     
+    margin-bottom: 0px; 
+}
+  /* Permiresimi i orarit me margina */
+.orar{
+  margin-top: 15x;
+}
+.orar p {
+ margin-bottom: 12px;   
+    line-height: 1.4;      
+    border-bottom: 1px solid orange; 
+    padding-bottom: 8px;   
+    width: 60%;
+}
+.ora {
+    color: #aaa;       
+    font-size: 14px;
+}
+   
+
+/*  FAQ  */
+.faq {
+    padding: 50px 40px;
+    background-color: #ffffff; 
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+}
+
+.faq h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.faq-item{
+  margin-bottom:20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.faq-item h3{
+  font-size:18px;
+  color:#333;
+  margin-bottom:5px ;
+}
+.faq-item{
+  font-size: 16px;
+  color:#666
 }
 
 
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
+/* pjesa e regjistrimit ne footer*/
+.email-bar {
+ background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 25px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px; 
+    box-sizing: border-box; 
+}
+
+/* Teksti majtas */
+.email-content h3 {
+    color: #ff8800;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.email-content p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Forma djathtas */
+.email-input {
+    display: flex;
+    gap: 10px;
+}
+
+.email-input input {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    background-color: #000; /* Input i zi */
+    color: white;
+    outline: none;
+}
+
+.email-input input:focus {
+    border-color: #ff8800;
+}
+
+.email-input button {
+    padding: 12px 30px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.email-input button:hover {
+    background-color: white;
+    color: #ff8800;
+    transform: scale(1.05);
 }
 
 /*BMI*/
