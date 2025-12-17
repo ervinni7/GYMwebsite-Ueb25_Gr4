@@ -71,3 +71,14 @@ if (emailForm) {
         }
     });
 }
+const faqQuestions = document.querySelectorAll('.faq-pyetje');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        // Gjejmë prindin e pyetjes (faq-item)
+        const faqItem = question.parentElement;
+
+        // E hapim ose e mbyllim duke shtuar/hequr klasën 'active'
+        faqItem.classList.toggle('active');
+    });
+});
