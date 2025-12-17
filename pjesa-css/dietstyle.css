@@ -20,16 +20,21 @@
   gap: 40px;          
 }
 
-.intro-text {
-  flex: 1;
-  font-size: 20px;    
-  margin-top: 30px;        
+.intro-text p:not(:last-child) {
+  margin-bottom: 18px;
 }
+
+.intro-text {
+  padding-left: 20px;
+  max-width: 650px;
+  border-left: 2px solid #ff8800;        
+}
+
 .intro-text p{
-  line-height: 1.7;
-  font-size: 18px;
+  line-height: 1.8;
+  font-size: 17px;
   text-align: justify;
-  color: #444
+  color: #333
 }
 .divider{
   width: 100%;
@@ -236,7 +241,7 @@ section li{
   }
 }
 
-
+/*BMI*/
 .tools-section p{
   text-align: center;
   font-size: 15px;
