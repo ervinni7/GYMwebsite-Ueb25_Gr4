@@ -71,3 +71,14 @@ if (emailForm) {
         }
     });
 }
+const faqQuestions = document.querySelectorAll('.faq-pyetje');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        // Gjejm faq-item
+        const faqItem = question.parentElement;
+
+        // E hapim ose e mbyllim duke shtuar ose hequr klasen active
+        faqItem.classList.toggle('active');
+    });
+});

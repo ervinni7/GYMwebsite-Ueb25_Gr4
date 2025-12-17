@@ -60,26 +60,36 @@ body {
   flex:1;
   max-width: 400px;
   background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  border-top: 5px solid orange;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: none;
+  transition: transform 0.3s ease;
 }
 
 .kontakt-form h3{
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color:#333;
+  font-size: 24px;
+  font-weight: 800;
 }
+.kontakt-form:hover{
+transform: translateY(-5px);
+}
+
 .kontakt-btn {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background-color: orange;
+    background: linear-gradient(45deg, #ff8800, #ffaa00);
     color: white;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.3)
 }
 
 .kontakt-btn:hover {
@@ -89,20 +99,21 @@ background-color: #e69500;
 
 .kontakt-input{
   width:100%;
-  padding:12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding:15px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #f8f9fa;
   margin-bottom: 20px;
   font-size: 14px;
   box-sizing: border-box;
   outline: none;
-  transition: 0.3s;
+  transition:all 0.3s;
+  font-family: Arial, sans-serif;
 }  
 .kontakt-input:focus {
-    border-color: orange;     
+    border-color: #ff8800;     
     background-color: white; 
-    box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); 
+    box-shadow: 0 4 10px rgba(255, 136, 0, 0.1); 
 }
 
 .footeri {
@@ -141,7 +152,7 @@ background-color: #111;
     flex-wrap: wrap;
     gap: 15px;
 }
-
+/* Pjesa ne map NA GJENI TEK */
 #nagjeni {
     margin: 0;
     font-size: 24px;
@@ -202,6 +213,69 @@ background-color: #111;
     font-weight: bold;
     text-decoration: none;
 }
+.faq{
+  padding: 60px 20px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.faq h2{
+  text-align: center;
+  color: orange;
+  margin-bottom:30px;
+  font-size:28px; 
+}
+
+.faq-item{
+border-bottom:1px solid #eee;
+margin-bottom: 10px;
+}
+
+.faq-pyetje{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-pyetje h3 {
+  font-size: 19px;
+  color: #333;
+  margin: 0;
+}
+.faq-plusi{
+  font-size: 24px;
+  color: orange;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.faq-pyetje:hover{
+  background-color: #f9f9f9;
+}
+.faq-pergjigjje{
+  display: none;
+  padding: 0 10px 20px 10px;
+  color:#666;
+  line-height: 1.6;
+  font-size: 15px;
+}
+/* Kjo klas thirret nga pjesa e javascriptit*/
+.faq-item.active .faq-pergjigjje{
+  display: block;
+}
+
+.faq-item.active .faq-plusi{
+  transform: rotate(45deg);
+  color:#333;
+}
+
+
+
 .footer-content {
     display: flex;
     flex-direction: row;
