@@ -460,5 +460,19 @@ color: #fff;
     color: #ff8800;
     transform: scale(1.05);
 }
+.copyright-bar {
+    width: 100%;
+    border-top: 1px solid #333; 
+    text-align: center;       
+    padding: 25px 0;            
+    margin-top: 50px;           
+    background-color: #111;     
+}
+
+.copyright-bar p {
+    color: #777;                
+    font-size: 14px;
+    margin: 0;
+}
 
 
