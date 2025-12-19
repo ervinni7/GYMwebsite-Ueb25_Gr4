@@ -82,3 +82,27 @@ faqQuestions.forEach(question => {
         faqItem.classList.toggle('active');
     });
 });
+// Pjesa e butonit te Pyetjeve logjika show-hide
+const mainBtn = document.getElementById('faq-toggle-btn');
+const faqSection = document.getElementById('faq-section');
+
+if (mainBtn && faqSection) {
+    mainBtn.addEventListener('click', function() {
+        
+        // shfaq ose fsheh seksionin
+        if (faqSection.style.display === 'none') {
+            faqSection.style.display = 'block';
+            
+            // Ndrysho pamjen e butonit
+            mainBtn.innerHTML = '❌ Mbyll Pyetjet'; 
+            mainBtn.classList.add('active'); // teksti tek faq portokall-bardhe
+
+        } else {
+            faqSection.style.display = 'none';
+            
+            // E kthen butonin siq ishte
+            mainBtn.innerHTML = '❓ Pyetje të Shpeshta';
+            mainBtn.classList.remove('active'); // e kthen ne transparent
+        }
+    });
+}

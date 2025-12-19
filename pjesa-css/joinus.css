@@ -208,11 +208,34 @@ background-color: #111;
     padding: 10px;
     border-radius: 50%;
 }
-
+/*Kur klikojme merr udhezime, ky tekst te qon ne google maps */
 .google-link {
     color: orange;
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Butoni i Pyetjeve apo FAQ */
+.faq-main-btn {
+    background-color: transparent; 
+    color: #ff8800;                
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 35px;
+    border: 2px solid #ff8800;    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;  
+    border-radius: 25px;               
+}
+
+
+.faq-main-btn:hover, 
+.faq-main-btn.active {             /* Kjo klasa .active shtohet me JS */
+    background-color: #ff8800;     
+    color: #ffffff !important;     /* Teksti behet i bardhe */
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.4);
+    transform: translateY(-2px);
 }
 .faq{
   padding: 60px 20px;
@@ -352,22 +375,6 @@ margin-bottom: 10px;
     opacity: 0.8; 
 }
 
-/*Logoja dhe orari */
-.logo-col .orar {
-    margin-top: 10px;
-}
-
-.logo-col .orar h4 {
-    margin-bottom: 8px;
-    font-size: 18px;
-    color: #000;
-}
-
-.logo-col .orar p {
-    margin: 2px 0;
-    color: #555;
-    font-size: 15px;
-}
 /* per permiresim te orarit */
 .dita {
 color: #fff;        
@@ -378,7 +385,7 @@ color: #fff;
 }
   /* Permiresimi i orarit me margina */
 .orar{
-  margin-top: 15x;
+  margin-top: 15px;
 }
 .orar p {
  margin-bottom: 12px;   
