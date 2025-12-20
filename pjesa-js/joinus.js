@@ -106,3 +106,42 @@ if (mainBtn && faqSection) {
         }
     });
 }
+//Logjika e dergo mesazhin
+const contactForm = document.querySelector('.kontakt-form form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Ndalojme rifreskimin e faqes
+
+        // Marrim vlerat
+        const nameInput = this.querySelector('input[placeholder="Emri juaj"]');
+        const emailInput = this.querySelector('input[type="email"]');
+        const messageInput = this.querySelector('textarea');
+
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
+
+        //SHikojme nese format jane bosh apo me space
+        if (name === "" || email === "" || message === "") {
+            Swal.fire({
+                title: 'Kujdes!',
+                text: 'Ju lutemi plotësoni të gjitha fushat!',
+                icon: 'warning',
+                confirmButtonColor: '#ff8800'
+            });
+            return; // Ndalem ketu nese ka gabim
+        }
+
+        //Popup i suksesit
+        Swal.fire({
+            title: `Faleminderit, ${name}!`, 
+            text: 'Mesazhi juaj u dërgua me sukses.',
+            icon: 'success',
+            confirmButtonColor: '#ff8800'
+        });
+
+        // Forma resetohet
+        contactForm.reset();
+    });
+}
