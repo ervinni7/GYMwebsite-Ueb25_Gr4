@@ -5,6 +5,8 @@
 
     <meta charset = "UTF-8" />
     <link rel = "stylesheet" href = "/pjesa-css/dietstyle.css">
+    <link rel = "stylesheet" href = "/pjesa-css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
     <a href="/pjesa-html/skeleti.html"></a>
 </head>
@@ -265,8 +267,23 @@ Kjo do të thotë të hani një shumëllojshmëri ushqimesh në përmasat e duhu
         </div>
     </div> 
 
+  
+    <div class="copyright-bar" data-aos="fade-in" data-aos-offset="0">
+      <p>© 2025 E's GYM. Të gjitha të drejtat e rezervuara.</p>
+  </div>
   </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,       
+    duration: 1000,   
+    offset: 100,      
+    easing: 'ease-out-cubic', 
+  });
+</script>
   <script src="/pjesa-js/diet.js"></script>
 </body>
 </html>
