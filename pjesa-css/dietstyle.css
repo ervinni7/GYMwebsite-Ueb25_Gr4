@@ -5,9 +5,7 @@
     text-align: center;
     border-bottom: 20px;
     margin-bottom: 20px;
-    
   }
-
 
 .intro-section {
   margin: 20px 40px;
@@ -151,233 +149,6 @@ html, body {
   color: #333;
 }
 
-
-/*footeri*/
-.footeri {
-background-color: #111;
-    color: #eee;
-    padding-top: 0px; 
-    border-top: 3px solid #ff8800;
-    margin-top: 0;
-    font-family: Arial, sans-serif;
-}
-.footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; 
-    align-items: flex-start; 
-    flex-wrap: wrap; 
-    max-width: 1200px; 
-    margin: 0 auto; /* ne mes */
-    padding: 0 20px;
-}
-
-
-/* Secila kolone e footerit */
-.footer-col {
-    flex: 1;             
-    min-width: 220px;    
-    text-align: left;
-}
-
-
-.logo-col img {
-    width: 180px;
-    margin-bottom: 20px;
-    
-    
-}
-
-/* Titujt e kolonav*/
-.footer-col h3 {
-    color: #ff8800;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Lista e navigimit*/
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-.footer-col li{
-  font-size: large;
-}
-
-/*Elementet e navigimit,hapesira*/
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-/*Elementet e rreth nesh, linqet */
-.footer-col ul li a {
-    text-decoration: none;
-    color: #ccc;        
-    font-size: 15px;
-    transition: all 0.3s ease;
-    display: inline-block; 
-}
-
-/* Ndryshon ngjyren me kursor tek Rreth Nesh*/
-.footer-col ul li a:hover {
-    color: #ff8800;     
-    transform: translateX(5px); /* leviz djathtas */
-}
-/*ndryshimi i imazhit */
-.logo-col img {
-    width: 250px;
-    margin-bottom: 20px;
-}
-.logo-col a:hover img {
-    transform: scale(1.1); 
-    opacity: 0.8; 
-}
-
-/*Logoja dhe orari */
-.logo-col .orar {
-    margin-top: 10px;
-}
-
-.logo-col .orar h4 {
-    margin-bottom: 8px;
-    font-size: 18px;
-    color: #000;
-}
-
-.logo-col .orar p {
-    margin: 2px 0;
-    color: #555;
-    font-size: 15px;
-}
-/* per permiresim te orarit */
-.dita {
-color: #fff;        
-    font-weight: bold;
-    font-size: 15px;
-    display: block;     
-    margin-bottom: 0px; 
-}
-  /* Permiresimi i orarit me margina */
-.orar{
-  margin-top: 15x;
-}
-.orar p {
- margin-bottom: 12px;   
-    line-height: 1.4;      
-    border-bottom: 1px solid orange; 
-    padding-bottom: 8px;   
-    width: 60%;
-}
-.ora {
-    color: #aaa;       
-    font-size: 14px;
-}
-   
-
-/*  FAQ  */
-.faq {
-    padding: 50px 40px;
-    background-color: #ffffff; 
-    text-align: left;
-    max-width: 800px;
-    margin: 40px auto; 
-    border-radius: 12px; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
-}
-
-.faq h2 {
-    text-align: center;
-    color: orange;
-    margin-bottom: 40px;
-    font-size: 28px;
-}
-
-.faq-item{
-  margin-bottom:20px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
-.faq-item h3{
-  font-size:18px;
-  color:#333;
-  margin-bottom:5px ;
-}
-.faq-item{
-  font-size: 16px;
-  color:#666
-}
-
-
-/* pjesa e regjistrimit ne footer*/
-.email-bar {
- background-color: #1a1a1a;
-    border-bottom: 1px solid #333;
-    padding: 25px 20px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
-    margin-bottom: 30px; 
-    box-sizing: border-box; 
-}
-
-/* Teksti majtas */
-.email-content h3 {
-    color: #ff8800;
-    font-size: 20px;
-    margin: 0 0 5px 0;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.email-content p {
-    color: #ccc;
-    font-size: 14px;
-    margin: 0;
-}
-
-/* Forma djathtas */
-.email-input {
-    display: flex;
-    gap: 10px;
-}
-
-.email-input input {
-    padding: 12px 20px;
-    width: 250px;
-    border-radius: 30px;
-    border: 1px solid #444;
-    background-color: #000; /* Input i zi */
-    color: white;
-    outline: none;
-}
-
-.email-input input:focus {
-    border-color: #ff8800;
-}
-
-.email-input button {
-    padding: 12px 30px;
-    background-color: #ff8800;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.email-input button:hover {
-    background-color: white;
-    color: #ff8800;
-    transform: scale(1.05);
-}
-
 /*BMI*/
 .tools-section p{
   text-align: center;
@@ -448,4 +219,24 @@ color: #fff;
   margin-top: 15px;
   font-size: 16px;
   font-weight: 600;
+}
+
+/*Animacioni*/
+.tools-section, .intro-text, .diet-item{
+opacity: 0;
+transition: all, 2s ease;
+}
+
+.tools-section{
+  transform: translateX(-60px);
+}
+.intro-text{
+  transform: translateX(60px);
+}
+.diet-item{
+  transform: translateX(-60px);
+}
+.animate-in{
+  opacity: 1;
+  transform: translateX(0);
 }

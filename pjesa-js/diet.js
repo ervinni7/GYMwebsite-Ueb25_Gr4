@@ -61,4 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+window.addEventListener("load", () => {
+  document.querySelector(".tools-section")?.classList.add("animate-in");
+  document.querySelector(".intro-text")?.classList.add("animate-in");
+
+  document.querySelectorAll(".diet-item").forEach((item, i) => {
+    setTimeout(() => {
+      item.classList.add("animate-in");
+    }, i * 120);
+  });
+});
+
 
