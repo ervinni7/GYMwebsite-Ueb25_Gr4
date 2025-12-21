@@ -1,18 +1,22 @@
   body{
     line-height: 1.6;
   }
+
   h1{
     text-align: center;
     border-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
   }
 
+
 .intro-section {
-  margin: 20px 40px;
-  margin-bottom: 40px;
+  margin:0;
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("../fotot/dietbackground.png") center/cover no-repeat;
 }
 
 .intro-layout {
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
@@ -24,12 +28,18 @@
 }
 
 .intro-text {
+  background: rgba(255,255,255,.92);
+  border-left: 3px solid #ff8800;
+  border-radius: 12px;
+  padding: 20px 22px;
   margin-left: 6px;
   padding-left: 12px;
   max-width: 800px;
-  border-left: 2px solid #ff8800;
-  margin-top: 0;      
+  border: 2px solid #ff8800;
+margin-bottom: 40px;
+margin-right: 40px;
 }
+     
 
 .intro-text p{
   line-height: 1.8;
@@ -37,13 +47,71 @@
   text-align: justify;
   color: #333
 }
+/* chips */
+.highlights{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.chip{
+  background:#fff5e6;
+  border:1px solid #ffd9b3;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:14px;
+  color:#333;
+  white-space:nowrap;
+}
+
+/* mini statistika */
+.mini-stats{
+  display:flex;
+  gap:14px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+.stat{
+  background:#fff;
+  border:1px solid #ffd9b3;
+  border-radius:12px;
+  padding:10px 12px;
+  min-width:160px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.04);
+
+}
+.stat .num{
+  font-size:18px;
+  font-weight:700;
+  color:#ff8800;
+  line-height:1.1;
+}
+.stat .label{
+  font-size:13px;
+  color:#555;
+  margin-top:4px;
+}
+
+/* CTA */
+.cta-link{
+  display:inline-block;
+  margin-top:14px;
+  font-weight:700;
+  color:#ff8800;
+  text-decoration:none;
+}
+.cta-link:hover{
+  text-decoration:underline;
+}
+
+/*vija horizontale*/
 .divider{
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, transparent, #ff8800, transparent);
   margin: 40px 0;
 }
-
+/* Pjesa e dietes*/
 #diet-list {
   max-width: 900px;
   margin: 20px auto;
@@ -64,6 +132,7 @@
   transition: 0.2s;
   box-shadow: 0 3px 8px rgba(0,0,0,0.08);
   border-left: 4px solid transparent;
+  border: 1px solid #faa340;
 }
 
 /*shigjeta e vogel*/
@@ -129,6 +198,7 @@
   padding: 8px 10px;
   border-bottom: 1px solid #eee;
   text-align: left;
+  
 }
 
 .diet-detail th {
@@ -137,17 +207,6 @@
 }
  
  
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #333;
-}
 
 /*BMI*/
 .tools-section p{
@@ -168,6 +227,8 @@ html, body {
   max-width: 400px;
   border: 1px solid #e3e3e3;
   transition: 0.3s ease-in-out;
+  margin-top: 80px;
+  border: 2px solid #ff8800;
 
 }
 
