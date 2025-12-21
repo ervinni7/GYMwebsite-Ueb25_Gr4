@@ -1,3 +1,4 @@
+/*BMI kalkulatori*/
 document.getElementById("bmi-form").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -24,7 +25,7 @@ document.getElementById("bmi-form").addEventListener("submit", function(e){
 });
 
 
-
+/*pjesa e dietes met dergu tek detajet*/ 
 const rowToDetailsMap = {
   bulking: 'diet-bulking',
   cutting: 'diet-cutting',
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+/*animacioni*/
 window.addEventListener("load", () => {
   document.querySelector(".tools-section")?.classList.add("animate-in");
   document.querySelector(".intro-text")?.classList.add("animate-in");
@@ -72,4 +74,11 @@ window.addEventListener("load", () => {
   });
 });
 
+/*Pjesa CIG kur prekum 'zgjidh dieten'*/ 
+document.querySelectorAll('.cta-link').forEach(btn=>{
+  btn.addEventListener('click', e=>{
+    e.preventDefault();
+    document.querySelector('#diet-list').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
 
