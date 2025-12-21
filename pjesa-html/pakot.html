@@ -4,60 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E's GYM</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/pjesa-css/test.css">
     <link rel="stylesheet" href="/pjesa-css/footer.css" />
+
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <section id="pricing" class="shop-section">
-  <h1>Shop</h1>
-  <p class="shop-subtitle">Zgjedh pakon që i përshtatet qëllimeve të tua</p>
+
+<section id="pricing" class="shop-section" data-aos="fade-up">
+  <h1 data-aos="fade-up">Shop</h1>
+  <p class="shop-subtitle" data-aos="fade-up">
+    Zgjedh pakon që i përshtatet qëllimeve të tua
+  </p>
 
   <div class="pakot-grid">
 
- <!-- PAKO 1 -->
-<div class="pako-card">
-  <a href="/pjesa-html/pakodiaspora.html" class="pako-link">
-    <img src="/fotot/diaspora.png" alt="Pako mujore për diasporë">
-  </a>
-  <p class="pako-title">PAKO MUJORE PËR DIASPORË</p>
-  <p class="pako-price">19.99 €</p>
-  <button class="pako-buton">Add To Cart</button>
-</div>
-
+    <!-- PAKO 1 -->
+    <div class="pako-card" data-aos="fade-up" data-aos-delay="0">
+      <a href="/pjesa-html/pakodiaspora.html" class="pako-link">
+        <img src="/fotot/diaspora.png" alt="Pako mujore për diasporë">
+      </a>
+      <p class="pako-title">PAKO MUJORE PËR DIASPORË</p>
+      <p class="pako-price">19.99 €</p>
+      <button class="pako-buton">Add To Cart</button>
+    </div>
 
     <!-- PAKO 2 -->
-    <div class="pako-card">
+    <div class="pako-card" data-aos="fade-up" data-aos-delay="100">
       <a href="/pjesa-html/1vitantarsim.html" class="pako-link">
-      <img src="/fotot/1vitantarsim.png" alt="Oferta 1 vit / 2 persona">
+        <img src="/fotot/1vitantarsim.png" alt="Oferta 1 vit / 2 persona">
       </a>
       <p class="pako-title">1 VIT ANËTARËSIM - 2 PERSONA</p>
       <p class="pako-price">150 €</p>
-       <buton class="pako-buton">Add To Cart </buton>
+      <button class="pako-buton">Add To Cart</button>
     </div>
 
     <!-- PAKO 3 -->
-    <div class="pako-card">
+    <div class="pako-card" data-aos="fade-up" data-aos-delay="200">
       <a href="/pjesa-html/oferta3n1.html" class="pako-link">
-      <img src="/fotot/1vit3.png" alt="Oferta 3 në 1">
+        <img src="/fotot/1vit3.png" alt="Oferta 3 në 1">
       </a>
       <p class="pako-title">OFERTA 3 NË 1</p>
       <p class="pako-price">180 €</p>
-       <buton class="pako-buton">Add To Cart </buton>
+      <button class="pako-buton">Add To Cart</button>
     </div>
 
     <!-- PAKO 4 -->
-    <div class="pako-card">
+    <div class="pako-card" data-aos="fade-up" data-aos-delay="300">
       <a href="/pjesa-html/allacsses.html" class="pako-link">
-      <img src="/fotot/allacsses.png" alt="All Club Access">
+        <img src="/fotot/allacsses.png" alt="All Club Access">
       </a>
       <p class="pako-title">ALL CLUB ACCESS - LIFETIME</p>
       <p class="pako-price">5 €</p>
-       <buton class="pako-buton">Add To Cart </buton>
+      <button class="pako-buton">Add To Cart</button>
     </div>
 
   </div>
 </section>
+
 <hr>
 
 <footer class="footeri"> 
@@ -123,4 +130,47 @@
     easing: 'ease-out-cubic', 
   });
 </script>
+<footer class="footer" data-aos="fade-up">
+  <div class="footer-col" data-aos="fade-up">
+    <img src="/fotot/logo.png" alt="E's GYM" class="footer-logo">
+    <p class="footer-hours">E Hënë - E Diell 06:00 - 00:00</p>
+  </div>
 
+  <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+    <h3>Rreth nesh</h3>
+    <ul>
+      <li><a href="/pjesa-html/kreu.html">Kreu</a></li>
+      <li><a href="/pjesa-html/diet.html">Dietat</a></li>
+      <li><a href="/pjesa-html/pakot.html">Pakot</a></li>
+      <li><a href="/pjesa-html/joinus.html">Kontakti</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+    <h3>Lokacionet</h3>
+    <ul>
+      <li>📍 Prishtine - Rruga B</li>
+      <li>📍 Prishtine - Fakulteti Teknik</li>
+      <li>📍 Prishtine - Albi Mall</li>
+      <li>📍 Prishtine - Royal Mall</li>
+      <li>📞 +383 45 123 456</li>
+    </ul>
+  </div>
+</footer>
+
+<div class="footer-bottom" data-aos="fade-up">
+  <p>© 2025 E's GYM. All rights reserved.</p>
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out-cubic',
+    once: true
+  });
+</script>
+
+</body>
+</html>
