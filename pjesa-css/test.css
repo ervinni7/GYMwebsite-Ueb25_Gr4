@@ -231,3 +231,37 @@ font-size: 32px;
   cursor: pointer;
   white-space: nowrap; 
 }
+.rating {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0 12px;
+  align-items: center;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 30px;
+  user-select: none;
+}
+
+.star.on {
+  color: gold;
+}
+
+.star.off {
+  color: #bdbdbd;
+}
+
+.rating-value {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #444;
+}
+
+.rating-root {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; 
+}
+
