@@ -90,13 +90,7 @@ body {
 .card-text {
   max-width: 550px;
   flex: 1; /* Zgjerimi sipas nevojës */
-  /* Transition për efekt të butë kur e lëvizim mouse-in */
-  transition: transform 0.3s ease;
   cursor: pointer;
-}
-.card-text:hover {
-  /* Zmadhon pak tekstin kur e vë mouse-in mbi të */
-  transform: scale(1.05);
 }
 .card-text h3 {
   color: #333;
@@ -147,8 +141,6 @@ body {
 .btn:hover {
   background: white;
   color: #ff8800;
-  /* Butoni rritet pak kur e vë mouse-in mbi të */
-  transform: scale(1.05);
 }
 
 /*  Media query për ekrane të vogla*/

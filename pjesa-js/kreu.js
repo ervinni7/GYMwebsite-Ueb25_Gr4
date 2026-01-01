@@ -33,7 +33,7 @@ function shfaqPershendetje() {
   hero.appendChild(pershendetjeDiv);
 }
 
-// Citatet motivuese që ndryshojnë çdo 5 sekonda
+// Thenjet motivuese që ndryshojnë çdo 5 sekonda
 function shfaqCitate() {
   const citatet = [
     '💪 "Fuqia nuk vjen nga ajo që mund të bësh, por nga tejkalimi i asaj që mendon se nuk mund."',
@@ -127,23 +127,7 @@ function krijoButonScrollTop() {
   `;
   
   document.body.appendChild(btn);
-  
-  // Shfaq/fsheh butonin bazuar në scroll
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 300) {
-      btn.style.display = 'block';
-    } else {
-      btn.style.display = 'none';
-    }
-  });
-  
-  // Kur klikon butonin, shko në krye
-  btn.addEventListener('click', function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Scroll i butë
-    });
-  });
+ 
   
   // Efekt hover për butonin
   btn.addEventListener('mouseenter', function() {
@@ -210,7 +194,6 @@ function shfaqKohenAktuale() {
 
 // Ekzekuto të gjitha funksionet kur faqja ngarkohet
 window.addEventListener('DOMContentLoaded', function() {
-  efektiTyping();
   shfaqPershendetje();
   shfaqCitate();
   krijoButonScrollTop();
