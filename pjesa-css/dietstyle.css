@@ -1,8 +1,4 @@
-  body{
-    line-height: 1.6;
-  
-  }
-  * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -166,7 +162,6 @@ margin-right: 40px;
 
 .diet-item:hover {
   background: #ffe4c4;
-  transform: translateY(-2px);
 }
 
 .diet-item.active {
