@@ -71,17 +71,6 @@ if (emailForm) {
         }
     });
 }
-const faqQuestions = document.querySelectorAll('.faq-pyetje');
-
-faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-        // Gjejm faq-item
-        const faqItem = question.parentElement;
-
-        // E hapim ose e mbyllim duke shtuar ose hequr klasen active
-        faqItem.classList.toggle('active');
-    });
-});
 // Pjesa e butonit te Pyetjeve logjika show-hide
 const mainBtn = document.getElementById('faq-toggle-btn');
 const faqSection = document.getElementById('faq-section');
@@ -89,20 +78,17 @@ const faqSection = document.getElementById('faq-section');
 if (mainBtn && faqSection) {
     mainBtn.addEventListener('click', function() {
         
-        // shfaq ose fsheh seksionin
-        if (faqSection.style.display === 'none') {
-            faqSection.style.display = 'block';
-            
-            // Ndrysho pamjen e butonit
-            mainBtn.innerHTML = '❌ Mbyll Pyetjet'; 
-            mainBtn.classList.add('active'); // teksti tek faq portokall-bardhe
+        // Kjo aktivizon CSS animacionin)
+        faqSection.classList.toggle('e-hapur');
 
+        if (faqSection.classList.contains('e-hapur')) {
+          
+            mainBtn.innerHTML = '❌ Mbyll Pyetjet'; 
+            mainBtn.classList.add('active'); 
         } else {
-            faqSection.style.display = 'none';
-            
-            // E kthen butonin siq ishte
+           
             mainBtn.innerHTML = '❓ Pyetje të Shpeshta';
-            mainBtn.classList.remove('active'); // e kthen ne transparent
+            mainBtn.classList.remove('active'); 
         }
     });
 }
@@ -145,3 +131,17 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+/*Per pjesen e pergjigjjeve, animacione te pergjigjjeve */
+$(document).ready(function(){
+
+    // Kur klikohet titulli i pyetjes
+    $(".faq-pyetje").click(function(){
+        
+        
+        $(this).next(".faq-pergjigjje").slideToggle(400); // 400ms shpejtesia
+
+      
+        $(this).parent().toggleClass("active");
+    });
+
+});
