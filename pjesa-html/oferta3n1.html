@@ -123,6 +123,16 @@
   <!-- JavaScript për butonin +-1 -->
   <script src="/pjesa-js/pakot.js"></script>
  
+<script>
+  document.querySelector(".pako-buton").onclick = function () {
+    Swal.fire({
+      icon: "success",
+      text: `Keni shtuar ${count} pako me sukses ✅`,
+      showConfirmButton: false,
+      timer: 2000
+    });
+  };
+</script>
 
 </body>
 </html>

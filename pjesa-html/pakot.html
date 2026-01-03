@@ -131,6 +131,65 @@
     once: true
   });
 </script>
+<script>
+  // Merr të gjithë butonat "Add To Cart"
+  const addToCartButtons = document.querySelectorAll(".pako-buton");
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      Swal.fire({
+        icon: "success",
+        title: "Sukses!",
+        text: "Pako juaj është shtuar me sukses 🏋️‍♂️",
+        showConfirmButton: false,
+        timer: 2000
+      });
+    });
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function () {
+
+/* ===== ANIMACION FOTO PAKO me Jquery ===== */
+$(".pako-card").on("mouseenter", function () {
+$(this).find("img").stop(true).animate(
+{ width: "105%" },
+250
+);
+});
+
+$(".pako-card").on("mouseleave", function () {
+$(this).find("img").stop(true).animate(
+{ width: "100%" },
+250
+);
+});
+
+/* ADD TO CART */
+$(".pako-buton").on("click", function (e) {
+e.preventDefault();
+e.stopPropagation(); // NDALON linkun <a>
+
+const btn = $(this);
+
+btn.stop(true)
+.text("Added ✓")
+.animate({ opacity: 0.4 }, 150)
+.animate({ opacity: 1 }, 150)
+.animate({ opacity: 0.4 }, 150)
+.animate({ opacity: 1 }, 150);
+
+setTimeout(() => {
+btn.text("Add To Cart");
+}, 2000);
+});
+
+});
+</script>
+
+
 
 </body>
 </html>
