@@ -1,34 +1,44 @@
-🏋️‍♂️ UEB25_Gr4 – Group 4 Project
-E’s GYM – Web Platform
+📌 Përmbledhje e Projektit
+Ky projekt është një platformë web e zhvilluar për E’s GYM si pjesë e projektit të lëndës Programimi ne Ueb nga ana e Klientit. Faqja është dizajnuar për të ofruar informacion të qartë dhe lehtësisht të aksesueshëm rreth palestrës, shërbimeve të saj dhe paketave të anëtarësimit. Platforma fokusohet në dizajn modern, navigim të thjeshtë dhe një përvojë miqësore për përdoruesin.
 
-📌 Project Overview
-This project is a web-based platform developed for E’s GYM as part of the  Coding in Ueb from client side course project. The website is designed to provide clear and accessible information about the gym, its services, and available membership packages. The platform focuses on a modern design, simple navigation, and a user-friendly experience.
+Vizitorët mund të eksplorojnë ofertat e palestrës, të shohin paketat e anëtarësimit, orarin e punës dhe informacionin e kontaktit. Struktura e faqes thekson qartësinë, tërheqjen vizuale dhe lehtësinë e përdorimit në pajisje të ndryshme.
 
-Visitors can explore the gym’s offerings, view membership packages, check working hours, and find contact information. The website structure emphasizes clarity, visual appeal, and ease of use across different devices.
+🛠️ Teknologjitë e Përdorura
 
-🛠️ Technologies Used
 Frontend: HTML5, CSS3, JavaScript
-Libraries: AOS (Animate On Scroll)
 
-⚙️ Features
-🏠 Informative homepage about E’s GYM
-🛒 Shop section displaying membership packages
-📦 Clear presentation of offers using a card-based layout
-📩 Newsletter email subscription section
-🕒 Gym working hours information
-📍 Contact details and locations
-🎨 Modern and responsive design
-✨ Scroll-based animations for enhanced user experience
+Librari: AOS (Animate On Scroll)
 
-🎯 Project Purpose
-The purpose of this project is to demonstrate fundamental web development skills through the creation of a functional and visually appealing website. It aims to apply clean HTML and CSS structure, basic JavaScript functionality, and user interface principles learned during the course.
+⚙️ Funksionalitetet
 
-👥 Authors
-Group 4 – UEB25
+🏠 Faqe kryesore informative për E’s GYM
+
+🛒 Seksion Shop që shfaq paketat e anëtarësimit
+
+📦 Prezantim i qartë i ofertave përmes layout-it me karta
+
+📩 Seksion për abonim në newsletter me email
+
+🕒 Informacion mbi orarin e punës së palestrës
+
+📍 Detaje kontakti dhe lokacioni
+
+🎨 Dizajn modern dhe responsive
+
+✨ Animacione gjatë scroll-it për përvojë më të mirë përdorimi
+
+🎯 Qëllimi i Projektit
+Qëllimi i këtij projekti është të demonstrojë aftësitë bazë në zhvillimin web përmes krijimit të një faqeje funksionale dhe vizualisht tërheqëse. Projekti synon të aplikojë strukturë të pastër HTML dhe CSS, funksionalitet bazë me JavaScript dhe parime të dizajnit të ndërfaqes së përdoruesit të mësuara gjatë kursit.
+
+👥 Autorët
+Grupi 4 – UEB25
 
 Ervin Nimani
+
 Erjon Ismajli
+
 Euron Ademaj
+
 Erion Meshi
 
-© 2025 E’s GYM. All rights reserved.
+© 2025 E’s GYM. Të gjitha të drejtat e rezervuara.
