@@ -25,6 +25,7 @@ The purpose of this project is to demonstrate fundamental web development skills
 
 👥 Authors
 Group 4 – UEB25
+
 Ervin Nimani
 Erjon Ismajli
 Euron Ademaj
