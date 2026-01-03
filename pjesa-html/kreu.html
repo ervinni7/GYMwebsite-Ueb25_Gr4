@@ -142,29 +142,44 @@
 </script>
 
 <script>
-  
   $(document).ready(function() {
-    // Hide all rows initially
-    $('.row').hide();
+    // Ensure all rows are visible first
+    const $rows = $('.row');
+    
+    // Set initial state - hide and reset any transforms
+    $rows.css({
+      'opacity': '0',
+      'display': 'flex',
+      'transform': 'translateY(20px)'
+    });
     
     // Fade in each row with a delay
-    $('.row').each(function(index) {
-      $(this).delay(300 * index).fadeIn(800);
+    $rows.each(function(index) {
+      const $row = $(this);
+      setTimeout(function() {
+        $row.css({
+          'opacity': '1',
+          'transform': 'translateY(0)',
+          'transition': 'opacity 0.8s ease, transform 0.8s ease'
+        });
+      }, 300 * index);
     });
     
     // Add hover animation to cards
-    $('.row').hover(
+    $rows.hover(
       function() {
-        $(this).stop().animate({ 
-          marginLeft: '10px',
-          marginRight: '-10px'
-        }, 200);
+        $(this).css({
+          'margin-left': '10px',
+          'margin-right': '-10px',
+          'transition': 'margin 0.2s ease'
+        });
       },
       function() {
-        $(this).stop().animate({ 
-          marginLeft: '0px',
-          marginRight: '0px'
-        }, 200);
+        $(this).css({
+          'margin-left': '0px',
+          'margin-right': '0px',
+          'transition': 'margin 0.2s ease'
+        });
       }
     );
   });
