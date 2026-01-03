@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/*animacioni*/
+/*animacioni BMI dhe tekst*/
 window.addEventListener("load", () => {
   document.querySelector(".tools-section")?.classList.add("animate-in");
   document.querySelector(".intro-text")?.classList.add("animate-in");
