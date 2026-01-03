@@ -64,20 +64,7 @@ body {
   background: #fafafa;
   border-left: 4px solid #ff8800;
   flex-wrap: wrap;
-  /* Animacion slide-in nga e majta */
-  animation: slideIn 0.8s ease-out;
-}
-
-/* Animacioni slideIn - kartela vijnë nga ana e majtë */
-@keyframes slideIn {
-  from {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  opacity: 1;
 }
 .row img {
   width: 280px;
