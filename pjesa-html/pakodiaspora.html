@@ -116,6 +116,62 @@
 </script>
   <!-- JavaScript për butonin +-1 -->
   <script src="/pjesa-js/pakot.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(function () {
+
+  // Shton CSS për animacion automatikisht 
+  if (!document.getElementById("cartAnimStyle")) {
+    $("head").append(`
+      <style id="cartAnimStyle">
+        @keyframes cartBounce {
+          0% { transform: scale(1); }
+          30% { transform: scale(1.08); }
+          60% { transform: scale(0.98); }
+          100% { transform: scale(1); }
+        }
+        .cart-bounce { animation: cartBounce .45s ease; }
+      </style>
+    `);
+  }
+
+  // Event delegation + ndal të gjitha handler-at tjerë
+  $(document).on("click", ".pako-buton", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+    const btn = $(this);
+    const qty = parseInt($(".quantity .number").text(), 10) || 1;
+
+    // Animacion 
+    btn.removeClass("cart-bounce");       // restart
+    void this.offsetWidth;                // force reflow
+    btn.addClass("cart-bounce");
+
+    // Ndrysho tekstin për pak 
+    const old = btn.text();
+    btn.text(`Added (${qty}) ✓`);
+
+    // Pop-out
+    setTimeout(() => {
+      Swal.fire({
+        icon: "success",
+        title: "U shtua në shportë",
+        text: `Sasia: ${qty}`,
+        timer: 1400,
+        showConfirmButton: false
+      });
+    }, 120);
+
+    setTimeout(() => btn.text(old), 1700);
+  });
+
+});
+</script>
+
   
 </body>
 </html>
