@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/pjesa-css/joinus.css" />
     <link rel="stylesheet" href="/pjesa-css/footer.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/pjesa-js/kreu.js"></script>
   </head>
 
@@ -137,6 +138,35 @@
     duration: 1000,   
     offset: 100,      
     easing: 'ease-out-cubic', 
+  });
+</script>
+
+<script>
+  
+  $(document).ready(function() {
+    // Hide all rows initially
+    $('.row').hide();
+    
+    // Fade in each row with a delay
+    $('.row').each(function(index) {
+      $(this).delay(300 * index).fadeIn(800);
+    });
+    
+    // Add hover animation to cards
+    $('.row').hover(
+      function() {
+        $(this).stop().animate({ 
+          marginLeft: '10px',
+          marginRight: '-10px'
+        }, 200);
+      },
+      function() {
+        $(this).stop().animate({ 
+          marginLeft: '0px',
+          marginRight: '0px'
+        }, 200);
+      }
+    );
   });
 </script>
   </body>
