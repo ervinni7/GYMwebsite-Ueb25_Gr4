@@ -218,7 +218,22 @@ background-color: #e69500;
     outline: none;  
     border-radius: 25px;               
 }
+#faq-section {
+    max-height: 0;             
+    opacity: 0;                
+    overflow: hidden;         
+    padding-top: 0;           
+    padding-bottom: 0;
+    transition: all 1.5s ease; 
+}
 
+
+#faq-section.e-hapur {
+    max-height: 1500px;        
+    opacity: 1;                
+    padding-top: 60px;         
+    padding-bottom: 60px;
+}
 
 .faq-main-btn:hover, 
 .faq-main-btn.active {             /* Kjo klasa .active shtohet me JS */
