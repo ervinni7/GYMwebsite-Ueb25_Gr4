@@ -2,14 +2,13 @@
 E’s GYM – Web Platform
 
 📌 Project Overview
-This project is a web-based platform developed for E’s GYM as part of the  Coding Ueb fr course project. The website is designed to provide clear and accessible information about the gym, its services, and available membership packages. The platform focuses on a modern design, simple navigation, and a user-friendly experience.
+This project is a web-based platform developed for E’s GYM as part of the  Coding in Ueb from client side course project. The website is designed to provide clear and accessible information about the gym, its services, and available membership packages. The platform focuses on a modern design, simple navigation, and a user-friendly experience.
 
 Visitors can explore the gym’s offerings, view membership packages, check working hours, and find contact information. The website structure emphasizes clarity, visual appeal, and ease of use across different devices.
 
 🛠️ Technologies Used
 Frontend: HTML5, CSS3, JavaScript
 Libraries: AOS (Animate On Scroll)
-Design Approach: Responsive layout with modern UI principles
 
 ⚙️ Features
 🏠 Informative homepage about E’s GYM
@@ -26,6 +25,9 @@ The purpose of this project is to demonstrate fundamental web development skills
 
 👥 Authors
 Group 4 – UEB25
-Academic project developed for educational purposes
+Ervin Nimani
+Erjon Ismajli
+Euron Ademaj
+Erion Meshi
 
 © 2025 E’s GYM. All rights reserved.
