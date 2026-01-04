@@ -80,67 +80,6 @@ function shfaqCitate() {
   setInterval(ndryshoCitate, 5000); // Ndërro çdo 5 sekonda
 }
 
-// Efekt typing për titullin
-function efektiTyping() {
-  const title = document.querySelector('#kreu-title');
-  const teksti = title.textContent;
-  title.textContent = '';
-  title.style.borderRight = '2px solid #ff8800';
-  title.style.paddingRight = '5px';
-  
-  let i = 0;
-  const timer = setInterval(() => {
-    if (i < teksti.length) {
-      title.textContent += teksti.charAt(i);
-      i++;
-    } else {
-      clearInterval(timer);
-      setTimeout(() => {
-        title.style.borderRight = 'none';
-      }, 500);
-    }
-  }, 150); // Shto shkronjë çdo 150ms
-}
-
-// Butoni "Shko në krye" që shfaqet kur bën scroll poshtë
-function krijoButonScrollTop() {
-  // Krijo butonin
-  const btn = document.createElement('button');
-  btn.textContent = '↑';
-  btn.id = 'scrollTopBtn';
-  btn.style.cssText = `
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #ff8800;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-  `;
-  
-  document.body.appendChild(btn);
- 
-  
-  // Efekt hover për butonin
-  btn.addEventListener('mouseenter', function() {
-    btn.style.transform = 'scale(1.1)';
-    btn.style.background = '#ff6600';
-  });
-  
-  btn.addEventListener('mouseleave', function() {
-    btn.style.transform = 'scale(1)';
-    btn.style.background = '#ff8800';
-  });
-}
-
 // Shfaq kohën aktuale në seksionin e orarit
 function shfaqKohenAktuale() {
   const infoLine = document.querySelector('.info-line');
@@ -196,6 +135,5 @@ function shfaqKohenAktuale() {
 window.addEventListener('DOMContentLoaded', function() {
   shfaqPershendetje();
   shfaqCitate();
-  krijoButonScrollTop();
   shfaqKohenAktuale();
 });
